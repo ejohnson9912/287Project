@@ -1,0 +1,27 @@
+module character(
+        input clk,
+		  input en,
+        input [8:0]maxHealth,
+	     input [3:0]speed,
+	     input [4:0]dodge,
+	     input [4:0]maxSpecial,
+	     input [5:0]damage,
+	     input [2:0]cost,
+		  output reg [8:0]health,
+		  output reg [4:0]special
+		  output speed, 
+		  output dodge);
+		  
+		  
+		  always@(posedge clk) begin
+		      if(en == 1'b1) begin
+				   
+				    health <= health - damage;
+					 special <= special - cost;
+				end else begin
+			       health <= health;
+					 special <= special;
+				end
+		end
+		
+endmodule 	

@@ -1,0 +1,743 @@
+Analysis & Synthesis report for BattleBoard
+Thu Nov 11 15:31:09 2021
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
+ 15. Parameter Settings for Inferred Entity Instance: lpm_divide:Div2
+ 16. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
+ 17. Port Connectivity Checks: "seven_segment:comb_19"
+ 18. Port Connectivity Checks: "seven_segment:comb_18"
+ 19. Port Connectivity Checks: "seven_segment:comb_17"
+ 20. Port Connectivity Checks: "seven_segment:comb_16"
+ 21. Port Connectivity Checks: "seven_segment:comb_15"
+ 22. Port Connectivity Checks: "seven_segment:comb_14"
+ 23. Port Connectivity Checks: "character:p1"
+ 24. Port Connectivity Checks: "attack:a1"
+ 25. Port Connectivity Checks: "rand:random"
+ 26. Port Connectivity Checks: "point:pos1"
+ 27. Post-Synthesis Netlist Statistics for Top Partition
+ 28. Elapsed Time Per Partition
+ 29. Analysis & Synthesis Messages
+ 30. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Nov 11 15:31:09 2021       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; BattleBoard                                 ;
+; Top-level Entity Name              ; BattleBoard                                 ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 167                                         ;
+;     Total combinational functions  ; 167                                         ;
+;     Dedicated logic registers      ; 10                                          ;
+; Total registers                    ; 10                                          ;
+; Total pins                         ; 56                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; BattleBoard        ; BattleBoard        ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; BattleBoard.v                    ; yes             ; User Verilog HDL File        ; M:/FinalProjectROBERIK/BattleBoard.v                                       ;         ;
+; seven_segment.v                  ; yes             ; User Verilog HDL File        ; M:/FinalProjectROBERIK/seven_segment.v                                     ;         ;
+; character.v                      ; yes             ; User Verilog HDL File        ; M:/FinalProjectROBERIK/character.v                                         ;         ;
+; attack.v                         ; yes             ; User Verilog HDL File        ; M:/FinalProjectROBERIK/attack.v                                            ;         ;
+; point.v                          ; yes             ; User Verilog HDL File        ; M:/FinalProjectROBERIK/point.v                                             ;         ;
+; rand.v                           ; yes             ; Auto-Found Verilog HDL File  ; M:/FinalProjectROBERIK/rand.v                                              ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal161.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc      ;         ;
+; db/lpm_divide_m9m.tdf            ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/lpm_divide_m9m.tdf                               ;         ;
+; db/sign_div_unsign_dkh.tdf       ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/sign_div_unsign_dkh.tdf                          ;         ;
+; db/alt_u_div_e4f.tdf             ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/alt_u_div_e4f.tdf                                ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/add_sub_7pc.tdf                                  ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/add_sub_8pc.tdf                                  ;         ;
+; db/lpm_divide_ihm.tdf            ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/lpm_divide_ihm.tdf                               ;         ;
+; db/sign_div_unsign_akh.tdf       ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/sign_div_unsign_akh.tdf                          ;         ;
+; db/alt_u_div_84f.tdf             ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/alt_u_div_84f.tdf                                ;         ;
+; db/lpm_divide_j9m.tdf            ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/lpm_divide_j9m.tdf                               ;         ;
+; db/sign_div_unsign_8kh.tdf       ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/sign_div_unsign_8kh.tdf                          ;         ;
+; db/alt_u_div_44f.tdf             ; yes             ; Auto-Generated Megafunction  ; M:/FinalProjectROBERIK/db/alt_u_div_44f.tdf                                ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                                                             ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                                                                     ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 167                                                                                                                       ;
+;                                             ;                                                                                                                           ;
+; Total combinational functions               ; 167                                                                                                                       ;
+; Logic element usage by number of LUT inputs ;                                                                                                                           ;
+;     -- 4 input functions                    ; 31                                                                                                                        ;
+;     -- 3 input functions                    ; 54                                                                                                                        ;
+;     -- <=2 input functions                  ; 82                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Logic elements by mode                      ;                                                                                                                           ;
+;     -- normal mode                          ; 111                                                                                                                       ;
+;     -- arithmetic mode                      ; 56                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Total registers                             ; 10                                                                                                                        ;
+;     -- Dedicated logic registers            ; 10                                                                                                                        ;
+;     -- I/O registers                        ; 0                                                                                                                         ;
+;                                             ;                                                                                                                           ;
+; I/O pins                                    ; 56                                                                                                                        ;
+;                                             ;                                                                                                                           ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                                                                         ;
+;                                             ;                                                                                                                           ;
+; Maximum fan-out node                        ; lpm_divide:Div0|lpm_divide_ihm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_84f:divider|add_sub_5_result_int[5]~8 ;
+; Maximum fan-out                             ; 12                                                                                                                        ;
+; Total fan-out                               ; 548                                                                                                                       ;
+; Average fan-out                             ; 1.90                                                                                                                      ;
++---------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                   ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                          ; Entity Name         ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |BattleBoard                           ; 167 (0)             ; 10 (0)                    ; 0           ; 0            ; 0       ; 0         ; 56   ; 0            ; |BattleBoard                                                                                                 ; BattleBoard         ; work         ;
+;    |lpm_divide:Div0|                   ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_ihm:auto_generated|  ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div0|lpm_divide_ihm:auto_generated                                                   ; lpm_divide_ihm      ; work         ;
+;          |sign_div_unsign_akh:divider| ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div0|lpm_divide_ihm:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
+;             |alt_u_div_84f:divider|    ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div0|lpm_divide_ihm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_84f:divider ; alt_u_div_84f       ; work         ;
+;    |lpm_divide:Div2|                   ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div2                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_ihm:auto_generated|  ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div2|lpm_divide_ihm:auto_generated                                                   ; lpm_divide_ihm      ; work         ;
+;          |sign_div_unsign_akh:divider| ; 18 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div2|lpm_divide_ihm:auto_generated|sign_div_unsign_akh:divider                       ; sign_div_unsign_akh ; work         ;
+;             |alt_u_div_84f:divider|    ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div2|lpm_divide_ihm:auto_generated|sign_div_unsign_akh:divider|alt_u_div_84f:divider ; alt_u_div_84f       ; work         ;
+;    |lpm_divide:Mod0|                   ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_j9m:auto_generated|  ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod0|lpm_divide_j9m:auto_generated                                                   ; lpm_divide_j9m      ; work         ;
+;          |sign_div_unsign_8kh:divider| ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod0|lpm_divide_j9m:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;             |alt_u_div_44f:divider|    ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod0|lpm_divide_j9m:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_44f:divider ; alt_u_div_44f       ; work         ;
+;    |lpm_divide:Mod2|                   ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod2                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_j9m:auto_generated|  ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod2|lpm_divide_j9m:auto_generated                                                   ; lpm_divide_j9m      ; work         ;
+;          |sign_div_unsign_8kh:divider| ; 20 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod2|lpm_divide_j9m:auto_generated|sign_div_unsign_8kh:divider                       ; sign_div_unsign_8kh ; work         ;
+;             |alt_u_div_44f:divider|    ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod2|lpm_divide_j9m:auto_generated|sign_div_unsign_8kh:divider|alt_u_div_44f:divider ; alt_u_div_44f       ; work         ;
+;    |point:pos1|                        ; 71 (71)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|point:pos1                                                                                      ; point               ; work         ;
+;    |seven_segment:comb_14|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_14                                                                           ; seven_segment       ; work         ;
+;    |seven_segment:comb_15|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_15                                                                           ; seven_segment       ; work         ;
+;    |seven_segment:comb_17|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_17                                                                           ; seven_segment       ; work         ;
+;    |seven_segment:comb_18|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_18                                                                           ; seven_segment       ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 10    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 10    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; point:pos1|x[1]                        ; 8       ;
+; point:pos1|x[0]                        ; 10      ;
+; point:pos1|y[1]                        ; 8       ;
+; point:pos1|y[0]                        ; 10      ;
+; Total number of inverted registers = 4 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos1|x[4] ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos1|y[4] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos1|x[1] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos1|y[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                ;
+; LPM_WIDTHD             ; 7              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_ihm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_j9m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                ;
+; LPM_WIDTHD             ; 7              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_m9m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div2 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 7              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_ihm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 5              ; Untyped                ;
+; LPM_WIDTHD             ; 4              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_j9m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seven_segment:comb_19"                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i    ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seven_segment:comb_18"                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i    ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seven_segment:comb_17"                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i    ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seven_segment:comb_16"                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i    ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seven_segment:comb_15"                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i    ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "seven_segment:comb_14"                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i    ; Input ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "character:p1"                                                                                                                                   ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                      ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; i       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "i[2..1]" will be connected to GND.    ;
+; hit     ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (6 bits) it drives.  Extra input bit(s) "hit[5..1]" will be connected to GND.  ;
+; cost    ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "cost[2..1]" will be connected to GND. ;
+; speed   ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "speed[3..1]" have no fanouts                     ;
+; speed   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; dodge   ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (1 bits) it drives; bit(s) "dodge[4..1]" have no fanouts                     ;
+; health  ; Output ; Warning  ; Output or bidir port (9 bits) is wider than the port expression (1 bits) it drives; bit(s) "health[8..1]" have no fanouts                    ;
+; health  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; special ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "attack:a1"                                                                                                                                      ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                       ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; i      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "i[2..1]" will be connected to GND.     ;
+; j      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "j[2..1]" will be connected to GND.     ;
+; dodge  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (5 bits) it drives.  Extra input bit(s) "dodge[4..1]" will be connected to GND. ;
+; aim    ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (5 bits) it drives.  Extra input bit(s) "aim[4..1]" will be connected to GND.   ;
+; spread ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (1 bits) it drives; bit(s) "spread[4..1]" have no fanouts                     ;
+; spread ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                           ;
+; range  ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (1 bits) it drives; bit(s) "range[4..1]" have no fanouts                      ;
+; range  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                           ;
+; load   ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (1 bits) it drives; bit(s) "load[3..1]" have no fanouts                       ;
+; load   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                           ;
+; damage ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (1 bits) it drives; bit(s) "damage[5..1]" have no fanouts                     ;
++--------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rand:random"                                                                                                                                   ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                                       ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; dodge ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (5 bits) it drives.  Extra input bit(s) "dodge[4..1]" will be connected to GND. ;
+; num   ; Output ; Warning  ; Output or bidir port (5 bits) is wider than the port expression (1 bits) it drives; bit(s) "num[4..1]" have no fanouts                        ;
++-------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------+
+; Port Connectivity Checks: "point:pos1" ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; i    ; Input ; Info     ; Stuck at GND ;
++------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 56                          ;
+; cycloneiii_ff         ; 10                          ;
+;     ENA CLR           ; 10                          ;
+; cycloneiii_lcell_comb ; 173                         ;
+;     arith             ; 56                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 34                          ;
+;     normal            ; 117                         ;
+;         0 data inputs ; 12                          ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 48                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 31                          ;
+;                       ;                             ;
+; Max LUT depth         ; 8.10                        ;
+; Average LUT depth     ; 5.82                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Thu Nov 11 15:30:57 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BattleBoard -c BattleBoard
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file battleboard.v
+    Info (12023): Found entity 1: BattleBoard File: M:/FinalProjectROBERIK/BattleBoard.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file seven_segment.v
+    Info (12023): Found entity 1: seven_segment File: M:/FinalProjectROBERIK/seven_segment.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file character.v
+    Info (12023): Found entity 1: character File: M:/FinalProjectROBERIK/character.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file attack.v
+    Info (12023): Found entity 1: attack File: M:/FinalProjectROBERIK/attack.v Line: 1
+Warning (12019): Can't analyze file -- file output_files/special.v is missing
+Warning (12019): Can't analyze file -- file output_files/rand.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file point.v
+    Info (12023): Found entity 1: point File: M:/FinalProjectROBERIK/point.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(33): created implicit net for "dodge" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(33): created implicit net for "num" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 33
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(34): created implicit net for "j" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(34): created implicit net for "aim" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(34): created implicit net for "spread" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(34): created implicit net for "range" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(34): created implicit net for "load" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(34): created implicit net for "damage" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 34
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(35): created implicit net for "cost" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(35): created implicit net for "speed" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 35
+Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(35): created implicit net for "health" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 35
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(50): instance has no name File: M:/FinalProjectROBERIK/BattleBoard.v Line: 50
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(51): instance has no name File: M:/FinalProjectROBERIK/BattleBoard.v Line: 51
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(52): instance has no name File: M:/FinalProjectROBERIK/BattleBoard.v Line: 52
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(54): instance has no name File: M:/FinalProjectROBERIK/BattleBoard.v Line: 54
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(55): instance has no name File: M:/FinalProjectROBERIK/BattleBoard.v Line: 55
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(56): instance has no name File: M:/FinalProjectROBERIK/BattleBoard.v Line: 56
+Info (12127): Elaborating entity "BattleBoard" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(39): truncated value with size 32 to match size of target (5) File: M:/FinalProjectROBERIK/BattleBoard.v Line: 39
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(40): truncated value with size 32 to match size of target (5) File: M:/FinalProjectROBERIK/BattleBoard.v Line: 40
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(41): truncated value with size 32 to match size of target (5) File: M:/FinalProjectROBERIK/BattleBoard.v Line: 41
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(43): truncated value with size 32 to match size of target (5) File: M:/FinalProjectROBERIK/BattleBoard.v Line: 43
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(44): truncated value with size 32 to match size of target (5) File: M:/FinalProjectROBERIK/BattleBoard.v Line: 44
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(45): truncated value with size 32 to match size of target (5) File: M:/FinalProjectROBERIK/BattleBoard.v Line: 45
+Info (12128): Elaborating entity "point" for hierarchy "point:pos1" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 31
+Warning (10463): Verilog HDL Declaration warning at rand.v(1): "rand" is SystemVerilog-2005 keyword File: M:/FinalProjectROBERIK/rand.v Line: 1
+Warning (12125): Using design file rand.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: rand File: M:/FinalProjectROBERIK/rand.v Line: 1
+Info (12128): Elaborating entity "rand" for hierarchy "rand:random" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 33
+Info (12128): Elaborating entity "attack" for hierarchy "attack:a1" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 34
+Warning (10034): Output port "range" at attack.v(10) has no driver File: M:/FinalProjectROBERIK/attack.v Line: 10
+Info (12128): Elaborating entity "character" for hierarchy "character:p1" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 35
+Warning (10034): Output port "speed" at character.v(8) has no driver File: M:/FinalProjectROBERIK/character.v Line: 8
+Info (12128): Elaborating entity "seven_segment" for hierarchy "seven_segment:comb_14" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 50
+Info (278001): Inferred 6 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 40
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 40
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 39
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 44
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 44
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 43
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 40
+Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter: File: M:/FinalProjectROBERIK/BattleBoard.v Line: 40
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_m9m.tdf
+    Info (12023): Found entity 1: lpm_divide_m9m File: M:/FinalProjectROBERIK/db/lpm_divide_m9m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_dkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_dkh File: M:/FinalProjectROBERIK/db/sign_div_unsign_dkh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_e4f.tdf
+    Info (12023): Found entity 1: alt_u_div_e4f File: M:/FinalProjectROBERIK/db/alt_u_div_e4f.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: M:/FinalProjectROBERIK/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: M:/FinalProjectROBERIK/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 40
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: M:/FinalProjectROBERIK/BattleBoard.v Line: 40
+    Info (12134): Parameter "LPM_WIDTHN" = "7"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ihm.tdf
+    Info (12023): Found entity 1: lpm_divide_ihm File: M:/FinalProjectROBERIK/db/lpm_divide_ihm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_akh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_akh File: M:/FinalProjectROBERIK/db/sign_div_unsign_akh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_84f.tdf
+    Info (12023): Found entity 1: alt_u_div_84f File: M:/FinalProjectROBERIK/db/alt_u_div_84f.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 39
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: M:/FinalProjectROBERIK/BattleBoard.v Line: 39
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_j9m.tdf
+    Info (12023): Found entity 1: lpm_divide_j9m File: M:/FinalProjectROBERIK/db/lpm_divide_j9m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh File: M:/FinalProjectROBERIK/db/sign_div_unsign_8kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_44f.tdf
+    Info (12023): Found entity 1: alt_u_div_44f File: M:/FinalProjectROBERIK/db/alt_u_div_44f.tdf Line: 27
+Warning (12241): 9 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: M:/FinalProjectROBERIK/point.v Line: 43
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 8
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 8
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 8
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 8
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 8
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 8
+    Warning (13410): Pin "HEX2[6]" is stuck at VCC File: M:/FinalProjectROBERIK/BattleBoard.v Line: 8
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 9
+    Warning (13410): Pin "HEX6[0]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 13
+    Warning (13410): Pin "HEX6[1]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 13
+    Warning (13410): Pin "HEX6[2]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 13
+    Warning (13410): Pin "HEX6[3]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 13
+    Warning (13410): Pin "HEX6[4]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 13
+    Warning (13410): Pin "HEX6[5]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 13
+    Warning (13410): Pin "HEX6[6]" is stuck at VCC File: M:/FinalProjectROBERIK/BattleBoard.v Line: 13
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: M:/FinalProjectROBERIK/BattleBoard.v Line: 14
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file M:/FinalProjectROBERIK/output_files/BattleBoard.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "switch" File: M:/FinalProjectROBERIK/BattleBoard.v Line: 5
+Info (21057): Implemented 223 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 14 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 167 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 4781 megabytes
+    Info: Processing ended: Thu Nov 11 15:31:09 2021
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in M:/FinalProjectROBERIK/output_files/BattleBoard.map.smsg.
+
+

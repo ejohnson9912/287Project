@@ -1,0 +1,161 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'disp_clk'
+Slack : -4.348
+TNS   : -35.765
+
+Type  : Slow 1200mV 85C Model Setup 'disp_clk_out'
+Slack : -1.507
+TNS   : -10.015
+
+Type  : Slow 1200mV 85C Model Setup 'disp_async_rst'
+Slack : -1.170
+TNS   : -6.341
+
+Type  : Slow 1200mV 85C Model Hold 'disp_clk'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'disp_clk_out'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'disp_async_rst'
+Slack : 1.472
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'disp_clk'
+Slack : -2.020
+TNS   : -33.920
+
+Type  : Slow 1200mV 85C Model Recovery 'disp_clk_out'
+Slack : -1.760
+TNS   : -17.376
+
+Type  : Slow 1200mV 85C Model Removal 'disp_clk_out'
+Slack : 1.632
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'disp_clk'
+Slack : 1.947
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'disp_clk'
+Slack : -3.000
+TNS   : -62.110
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'disp_async_rst'
+Slack : -3.000
+TNS   : -11.995
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'disp_clk_out'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Setup 'disp_clk'
+Slack : -3.886
+TNS   : -28.642
+
+Type  : Slow 1200mV 0C Model Setup 'disp_clk_out'
+Slack : -1.278
+TNS   : -8.174
+
+Type  : Slow 1200mV 0C Model Setup 'disp_async_rst'
+Slack : -1.004
+TNS   : -5.416
+
+Type  : Slow 1200mV 0C Model Hold 'disp_clk'
+Slack : 0.326
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'disp_clk_out'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'disp_async_rst'
+Slack : 1.375
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'disp_clk'
+Slack : -1.761
+TNS   : -29.592
+
+Type  : Slow 1200mV 0C Model Recovery 'disp_clk_out'
+Slack : -1.544
+TNS   : -15.240
+
+Type  : Slow 1200mV 0C Model Removal 'disp_clk_out'
+Slack : 1.646
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'disp_clk'
+Slack : 1.913
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'disp_clk'
+Slack : -3.000
+TNS   : -62.110
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'disp_async_rst'
+Slack : -3.000
+TNS   : -11.995
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'disp_clk_out'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Fast 1200mV 0C Model Setup 'disp_clk'
+Slack : -1.583
+TNS   : -3.717
+
+Type  : Fast 1200mV 0C Model Setup 'disp_clk_out'
+Slack : -0.239
+TNS   : -0.816
+
+Type  : Fast 1200mV 0C Model Setup 'disp_async_rst'
+Slack : -0.097
+TNS   : -0.277
+
+Type  : Fast 1200mV 0C Model Hold 'disp_clk_out'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'disp_clk'
+Slack : 0.283
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'disp_async_rst'
+Slack : 0.712
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'disp_clk'
+Slack : -1.204
+TNS   : -20.243
+
+Type  : Fast 1200mV 0C Model Recovery 'disp_clk_out'
+Slack : -1.106
+TNS   : -10.956
+
+Type  : Fast 1200mV 0C Model Removal 'disp_clk_out'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'disp_clk'
+Slack : 0.759
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'disp_clk'
+Slack : -3.000
+TNS   : -51.866
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'disp_async_rst'
+Slack : -3.000
+TNS   : -11.054
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'disp_clk_out'
+Slack : -1.000
+TNS   : -10.000
+
+------------------------------------------------------------

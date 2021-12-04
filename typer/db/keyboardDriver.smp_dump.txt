@@ -1,0 +1,13 @@
+
+State Machine - |keyboardDriver|S
+Name S.start S.update S.delay 
+S.start 0 0 0 
+S.delay 1 0 1 
+S.update 1 1 0 
+
+State Machine - |keyboardDriver|keyboard:typer|S
+Name S.finish S.update S.getData S.startBit 
+S.startBit 0 0 0 0 
+S.getData 0 0 1 1 
+S.update 0 1 0 1 
+S.finish 1 0 0 1 

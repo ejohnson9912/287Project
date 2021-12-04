@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at lcd_driver.v(43): always construct contains both blocking and non-blocking assignments File: M:/lcd/lcd/lcd_driver.v Line: 43

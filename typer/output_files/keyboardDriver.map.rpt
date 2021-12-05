@@ -1,5 +1,5 @@
 Analysis & Synthesis report for keyboardDriver
-Sat Dec 04 16:45:06 2021
+Sat Dec 04 18:27:49 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -24,7 +24,6 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
  16. Post-Synthesis Netlist Statistics for Top Partition
  17. Elapsed Time Per Partition
  18. Analysis & Synthesis Messages
- 19. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -51,13 +50,13 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 04 16:45:06 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 04 18:27:49 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; keyboardDriver                              ;
 ; Top-level Entity Name              ; keyboardDriver                              ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 12                                          ;
-;     Total combinational functions  ; 11                                          ;
+; Total logic elements               ; 11                                          ;
+;     Total combinational functions  ; 10                                          ;
 ;     Dedicated logic registers      ; 9                                           ;
 ; Total registers                    ; 9                                           ;
 ; Total pins                         ; 33                                          ;
@@ -73,7 +72,6 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP4CE115F29C7      ;                    ;
 ; Top-level entity name                                                      ; keyboardDriver     ; keyboardDriver     ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -167,18 +165,19 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                               ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
-; keyboardDriver.v                 ; yes             ; User Verilog HDL File  ; M:/typer/keyboardDriver.v    ;         ;
-; keyboard.v                       ; yes             ; User Verilog HDL File  ; M:/typer/keyboard.v          ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                       ;
++----------------------------------+-----------------+------------------------+--------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path         ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------+---------+
+; keyboardDriver.v                 ; yes             ; User Verilog HDL File  ; M:/287Project/typer/keyboardDriver.v ;         ;
+; keyboard.v                       ; yes             ; User Verilog HDL File  ; M:/287Project/typer/keyboard.v       ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------+---------+
 
 
 +-------------------------------------------------------------+
@@ -186,16 +185,16 @@ agreement for further details.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 12            ;
+; Estimated Total logic elements              ; 11            ;
 ;                                             ;               ;
-; Total combinational functions               ; 11            ;
+; Total combinational functions               ; 10            ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 7             ;
-;     -- 3 input functions                    ; 1             ;
-;     -- <=2 input functions                  ; 3             ;
+;     -- 4 input functions                    ; 5             ;
+;     -- 3 input functions                    ; 3             ;
+;     -- <=2 input functions                  ; 2             ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 11            ;
+;     -- normal mode                          ; 10            ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
 ; Total registers                             ; 9             ;
@@ -207,9 +206,9 @@ agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; PS2_CLK~input ;
-; Maximum fan-out                             ; 9             ;
-; Total fan-out                               ; 88            ;
-; Average fan-out                             ; 1.02          ;
+; Maximum fan-out                             ; 8             ;
+; Total fan-out                               ; 86            ;
+; Average fan-out                             ; 1.01          ;
 +---------------------------------------------+---------------+
 
 
@@ -218,8 +217,8 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name            ; Entity Name    ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+----------------+--------------+
-; |keyboardDriver            ; 11 (0)              ; 9 (0)                     ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |keyboardDriver                ; keyboardDriver ; work         ;
-;    |keyboard:typer|        ; 11 (11)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keyboardDriver|keyboard:typer ; keyboard       ; work         ;
+; |keyboardDriver            ; 10 (0)              ; 9 (1)                     ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |keyboardDriver                ; keyboardDriver ; work         ;
+;    |keyboard:typer|        ; 10 (10)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |keyboardDriver|keyboard:typer ; keyboard       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,16 +236,15 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------+
-; State Machine - |keyboardDriver|keyboard:typer|S          ;
-+------------+----------+----------+-----------+------------+
-; Name       ; S.finish ; S.update ; S.getData ; S.startBit ;
-+------------+----------+----------+-----------+------------+
-; S.startBit ; 0        ; 0        ; 0         ; 0          ;
-; S.getData  ; 0        ; 0        ; 1         ; 1          ;
-; S.update   ; 0        ; 1        ; 0         ; 1          ;
-; S.finish   ; 1        ; 0        ; 0         ; 1          ;
-+------------+----------+----------+-----------+------------+
++--------------------------------------------------+
+; State Machine - |keyboardDriver|keyboard:typer|S ;
++------------+------------+----------+-------------+
+; Name       ; S.startBit ; S.update ; S.getData   ;
++------------+------------+----------+-------------+
+; S.startBit ; 0          ; 0        ; 0           ;
+; S.getData  ; 1          ; 0        ; 1           ;
+; S.update   ; 1          ; 1        ; 0           ;
++------------+------------+----------+-------------+
 
 
 +---------------------------------------------------------------------------------+
@@ -254,15 +252,13 @@ Encoding Type:  One-Hot
 +----------------------------------------+----------------------------------------+
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
-; i[1..7]                                ; Merged with i[0]                       ;
-; i[0]                                   ; Stuck at GND due to stuck port data_in ;
+; i[1..6]                                ; Merged with i[7]                       ;
+; i[7]                                   ; Stuck at GND due to stuck port data_in ;
 ; S.delay                                ; Lost fanout                            ;
-; keyboard:typer|S~2                     ; Lost fanout                            ;
-; keyboard:typer|S~3                     ; Lost fanout                            ;
 ; keyboard:typer|S~4                     ; Lost fanout                            ;
 ; S.update                               ; Lost fanout                            ;
 ; S.start                                ; Lost fanout                            ;
-; Total Number of Removed Registers = 14 ;                                        ;
+; Total Number of Removed Registers = 11 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -283,7 +279,7 @@ Encoding Type:  One-Hot
 ; Total registers                              ; 9     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -310,7 +306,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; startBit       ; 000   ; Unsigned Binary                    ;
 ; getData        ; 001   ; Unsigned Binary                    ;
 ; update         ; 010   ; Unsigned Binary                    ;
-; finish         ; 011   ; Unsigned Binary                    ;
 +----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -332,17 +327,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 33                          ;
 ; cycloneiii_ff         ; 9                           ;
-;     plain             ; 9                           ;
-; cycloneiii_lcell_comb ; 13                          ;
-;     normal            ; 13                          ;
+;     CLR               ; 1                           ;
+;     plain             ; 8                           ;
+; cycloneiii_lcell_comb ; 12                          ;
+;     normal            ; 12                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 7                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 5                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.43                        ;
+; Average LUT depth     ; 1.13                        ;
 +-----------------------+-----------------------------+
 
 
@@ -361,79 +357,71 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sat Dec 04 16:44:55 2021
+    Info: Processing started: Sat Dec 04 18:27:39 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off keyboardDriver -c keyboardDriver
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file keyboarddriver.v
-    Info (12023): Found entity 1: keyboardDriver File: M:/typer/keyboardDriver.v Line: 1
+    Info (12023): Found entity 1: keyboardDriver File: M:/287Project/typer/keyboardDriver.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file keyboard.v
-    Info (12023): Found entity 1: keyboard File: M:/typer/keyboard.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at keyboardDriver.v(29): created implicit net for "character" File: M:/typer/keyboardDriver.v Line: 29
+    Info (12023): Found entity 1: keyboard File: M:/287Project/typer/keyboard.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at keyboardDriver.v(29): created implicit net for "character" File: M:/287Project/typer/keyboardDriver.v Line: 29
 Info (12127): Elaborating entity "keyboardDriver" for the top level hierarchy
-Warning (10858): Verilog HDL warning at keyboardDriver.v(9): object char used but never assigned File: M:/typer/keyboardDriver.v Line: 9
-Warning (10230): Verilog HDL assignment warning at keyboardDriver.v(44): truncated value with size 32 to match size of target (8) File: M:/typer/keyboardDriver.v Line: 44
-Warning (10230): Verilog HDL assignment warning at keyboardDriver.v(46): truncated value with size 32 to match size of target (8) File: M:/typer/keyboardDriver.v Line: 46
-Warning (10240): Verilog HDL Always Construct warning at keyboardDriver.v(56): inferring latch(es) for variable "NS", which holds its previous value in one or more paths through the always construct File: M:/typer/keyboardDriver.v Line: 56
-Warning (10030): Net "char.01110010" at keyboardDriver.v(9) has no driver or initial value, using a default initial value '0' File: M:/typer/keyboardDriver.v Line: 9
-Warning (10030): Net "char.01110101" at keyboardDriver.v(9) has no driver or initial value, using a default initial value '0' File: M:/typer/keyboardDriver.v Line: 9
-Warning (10034): Output port "LEDR[16..8]" at keyboardDriver.v(5) has no driver File: M:/typer/keyboardDriver.v Line: 5
-Info (10041): Inferred latch for "NS.update" at keyboardDriver.v(56) File: M:/typer/keyboardDriver.v Line: 56
-Info (10041): Inferred latch for "NS.delay" at keyboardDriver.v(56) File: M:/typer/keyboardDriver.v Line: 56
-Info (12128): Elaborating entity "keyboard" for hierarchy "keyboard:typer" File: M:/typer/keyboardDriver.v Line: 29
+Warning (10858): Verilog HDL warning at keyboardDriver.v(9): object char used but never assigned File: M:/287Project/typer/keyboardDriver.v Line: 9
+Warning (10230): Verilog HDL assignment warning at keyboardDriver.v(44): truncated value with size 32 to match size of target (8) File: M:/287Project/typer/keyboardDriver.v Line: 44
+Warning (10230): Verilog HDL assignment warning at keyboardDriver.v(46): truncated value with size 32 to match size of target (8) File: M:/287Project/typer/keyboardDriver.v Line: 46
+Warning (10240): Verilog HDL Always Construct warning at keyboardDriver.v(56): inferring latch(es) for variable "NS", which holds its previous value in one or more paths through the always construct File: M:/287Project/typer/keyboardDriver.v Line: 56
+Warning (10030): Net "char.01110010" at keyboardDriver.v(9) has no driver or initial value, using a default initial value '0' File: M:/287Project/typer/keyboardDriver.v Line: 9
+Warning (10030): Net "char.01110101" at keyboardDriver.v(9) has no driver or initial value, using a default initial value '0' File: M:/287Project/typer/keyboardDriver.v Line: 9
+Warning (10034): Output port "LEDR[16..8]" at keyboardDriver.v(5) has no driver File: M:/287Project/typer/keyboardDriver.v Line: 5
+Info (10041): Inferred latch for "NS.update" at keyboardDriver.v(56) File: M:/287Project/typer/keyboardDriver.v Line: 56
+Info (10041): Inferred latch for "NS.delay" at keyboardDriver.v(56) File: M:/287Project/typer/keyboardDriver.v Line: 56
+Info (12128): Elaborating entity "keyboard" for hierarchy "keyboard:typer" File: M:/287Project/typer/keyboardDriver.v Line: 29
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[0]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[1]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[10]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[11]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[12]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[13]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[14]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[15]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDR[16]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 5
-    Warning (13410): Pin "LEDG[0]" is stuck at VCC File: M:/typer/keyboardDriver.v Line: 6
-    Warning (13410): Pin "LEDG[1]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 6
-    Warning (13410): Pin "LEDG[2]" is stuck at VCC File: M:/typer/keyboardDriver.v Line: 6
-    Warning (13410): Pin "LEDG[3]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 6
-    Warning (13410): Pin "LEDG[4]" is stuck at VCC File: M:/typer/keyboardDriver.v Line: 6
-    Warning (13410): Pin "LEDG[5]" is stuck at VCC File: M:/typer/keyboardDriver.v Line: 6
-    Warning (13410): Pin "LEDG[6]" is stuck at VCC File: M:/typer/keyboardDriver.v Line: 6
-    Warning (13410): Pin "LEDG[7]" is stuck at GND File: M:/typer/keyboardDriver.v Line: 6
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[10]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[11]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[12]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[13]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[14]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[15]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDR[16]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 5
+    Warning (13410): Pin "LEDG[0]" is stuck at VCC File: M:/287Project/typer/keyboardDriver.v Line: 6
+    Warning (13410): Pin "LEDG[1]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 6
+    Warning (13410): Pin "LEDG[2]" is stuck at VCC File: M:/287Project/typer/keyboardDriver.v Line: 6
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 6
+    Warning (13410): Pin "LEDG[4]" is stuck at VCC File: M:/287Project/typer/keyboardDriver.v Line: 6
+    Warning (13410): Pin "LEDG[5]" is stuck at VCC File: M:/287Project/typer/keyboardDriver.v Line: 6
+    Warning (13410): Pin "LEDG[6]" is stuck at VCC File: M:/287Project/typer/keyboardDriver.v Line: 6
+    Warning (13410): Pin "LEDG[7]" is stuck at GND File: M:/287Project/typer/keyboardDriver.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 6 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file M:/typer/output_files/keyboardDriver.map.smsg
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register i[0] will power up to Low File: M:/287Project/typer/keyboardDriver.v Line: 37
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: M:/typer/keyboardDriver.v Line: 3
-    Warning (15610): No output dependent on input pin "KEY[2]" File: M:/typer/keyboardDriver.v Line: 3
-    Warning (15610): No output dependent on input pin "KEY[3]" File: M:/typer/keyboardDriver.v Line: 3
-    Warning (15610): No output dependent on input pin "PS2_DAT" File: M:/typer/keyboardDriver.v Line: 4
-    Warning (15610): No output dependent on input pin "CLK" File: M:/typer/keyboardDriver.v Line: 1
-    Warning (15610): No output dependent on input pin "KEY[0]" File: M:/typer/keyboardDriver.v Line: 3
-Info (21057): Implemented 45 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: M:/287Project/typer/keyboardDriver.v Line: 3
+    Warning (15610): No output dependent on input pin "KEY[2]" File: M:/287Project/typer/keyboardDriver.v Line: 3
+    Warning (15610): No output dependent on input pin "KEY[3]" File: M:/287Project/typer/keyboardDriver.v Line: 3
+    Warning (15610): No output dependent on input pin "PS2_DAT" File: M:/287Project/typer/keyboardDriver.v Line: 4
+Info (21057): Implemented 44 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 26 output pins
-    Info (21061): Implemented 12 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Sat Dec 04 16:45:06 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:20
-
-
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in M:/typer/output_files/keyboardDriver.map.smsg.
+    Info (21061): Implemented 11 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 42 warnings
+    Info: Peak virtual memory: 4775 megabytes
+    Info: Processing ended: Sat Dec 04 18:27:49 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
 
 

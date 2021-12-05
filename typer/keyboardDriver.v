@@ -11,7 +11,7 @@ module keyboardDriver(input CLK,
 	 
 	 wire rst;
 	 
-	 reg [7:0]i; // for testing
+	 reg [7:0]i = 1; // for testing
 	 
 	 assign LEDR[7:0] = i;
 	 assign LEDG[7:0] = char;
@@ -26,7 +26,7 @@ module keyboardDriver(input CLK,
 				  update = 2'd2;
 				  
 	
-	keyboard typer(PS2_CLK, PS2_DAT, done, character);
+	keyboard typer(PS2_CLK, PS2_DAT, character, done);
 				  
 	 
 	 always @(posedge CLK or negedge rst) begin

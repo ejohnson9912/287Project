@@ -3,39 +3,75 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'PS2_CLK'
-Slack : -0.683
-TNS   : -2.641
+Slack : -0.424
+TNS   : -1.411
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : 0.271
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'PS2_CLK'
-Slack : 0.440
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.416
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PS2_CLK'
 Slack : -3.000
-TNS   : -14.565
+TNS   : -11.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.000
 
 Type  : Slow 1200mV 0C Model Setup 'PS2_CLK'
-Slack : -0.511
-TNS   : -1.628
+Slack : -0.267
+TNS   : -0.611
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : 0.355
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'PS2_CLK'
-Slack : 0.387
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.376
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PS2_CLK'
 Slack : -3.000
-TNS   : -14.565
+TNS   : -11.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.000
 
 Type  : Fast 1200mV 0C Model Setup 'PS2_CLK'
-Slack : 0.186
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : 0.601
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'PS2_CLK'
-Slack : 0.199
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.218
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PS2_CLK'
 Slack : -3.000
-TNS   : -15.382
+TNS   : -11.840
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -4.081
 
 ------------------------------------------------------------

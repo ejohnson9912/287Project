@@ -397,6 +397,7 @@ module BattleBoard(
 				end
 				
 				p1AInst: begin
+				   LEDR <= 0;
 				end
 				
 				p1RInst: begin
@@ -544,7 +545,7 @@ module BattleBoard(
 				end 
 				p2AInst: begin
 				  choiceA <= 0;
-				  
+				  LEDR <= 0;
 			     pointEn2 <= 1'b0;
 				  
 				  xMove <= 0;
@@ -1742,7 +1743,7 @@ always @(posedge CLOCK_50) begin
         x = p2_x + draw_counter[1:0];
         y = p2_y + draw_counter[3:2];
         draw_counter = draw_counter + 1'b1;
-        colour = p2_colour;
+        colour = colorP2;
       end else begin
         draw_counter = 8'b00000000;
         state <= DRAW_VL1;
@@ -1786,7 +1787,7 @@ always @(posedge CLOCK_50) begin
         x = p1_x + draw_counter[1:0];
         y = p1_y + draw_counter[3:2];
         draw_counter = draw_counter + 1'b1;
-        colour = p1_colour;
+        colour = colorP1;
       end else begin
         draw_counter = 8'b00000000;
         state <= ERASE_P2;
@@ -1842,7 +1843,7 @@ always @(posedge CLOCK_50) begin
         x = p2_x + draw_counter[1:0];
         y = p2_y + draw_counter[3:2];
         draw_counter = draw_counter + 1'b1;
-        colour = p2_colour;
+        colour = colorP2;
       end else begin
         draw_counter = 8'b00000000;
         state <= IDLE;

@@ -1,5 +1,5 @@
 Flow report for BattleBoard
-Thu Dec 09 14:52:27 2021
+Thu Dec 09 15:21:23 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,17 +41,17 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Dec 09 14:52:17 2021       ;
+; Flow Status                        ; Successful - Thu Dec 09 15:21:12 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; BattleBoard                                 ;
 ; Top-level Entity Name              ; BattleBoard                                 ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,876 / 114,480 ( 3 % )                     ;
-;     Total combinational functions  ; 2,833 / 114,480 ( 2 % )                     ;
-;     Dedicated logic registers      ; 565 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 565                                         ;
+; Total logic elements               ; 2,872 / 114,480 ( 3 % )                     ;
+;     Total combinational functions  ; 2,828 / 114,480 ( 2 % )                     ;
+;     Dedicated logic registers      ; 566 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 566                                         ;
 ; Total pins                         ; 155 / 529 ( 29 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 57,600 / 3,981,312 ( 1 % )                  ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/09/2021 14:51:17 ;
+; Start date & time ; 12/09/2021 15:20:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; BattleBoard         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 238177198223976.163907947701932        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 238177198223976.163908121401396        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -93,11 +93,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 4834 MB             ; 00:00:28                           ;
-; Fitter                    ; 00:00:29     ; 1.0                     ; 5739 MB             ; 00:00:43                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4694 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 4882 MB             ; 00:00:05                           ;
-; Total                     ; 00:01:02     ; --                      ; --                  ; 00:01:19                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 4818 MB             ; 00:00:28                           ;
+; Fitter                    ; 00:00:28     ; 1.0                     ; 5748 MB             ; 00:00:44                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4696 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 4877 MB             ; 00:00:05                           ;
+; Total                     ; 00:00:59     ; --                      ; --                  ; 00:01:20                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -53,7 +53,7 @@ module character(
 						 speed = 4'd2;
 						 dodge = 5'd5;
 						 maxSpecial = 4'd10;
-						 color = 3'b101;
+						 color = 3'b0;
 					 end
 					 default: begin
 					    maxHealth = 9'd150;

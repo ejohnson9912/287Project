@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BattleBoard
-Thu Dec 09 14:51:37 2021
+Thu Dec 09 15:20:34 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -59,12 +59,12 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
  51. altpll Parameter Settings by Entity Instance
  52. lpm_mult Parameter Settings by Entity Instance
  53. Port Connectivity Checks: "vga_adapter:VGA"
- 54. Port Connectivity Checks: "seven_segment:comb_5040"
- 55. Port Connectivity Checks: "seven_segment:comb_5039"
- 56. Port Connectivity Checks: "seven_segment:comb_5038"
- 57. Port Connectivity Checks: "seven_segment:comb_5037"
- 58. Port Connectivity Checks: "seven_segment:comb_5036"
- 59. Port Connectivity Checks: "seven_segment:comb_5035"
+ 54. Port Connectivity Checks: "seven_segment:comb_5058"
+ 55. Port Connectivity Checks: "seven_segment:comb_5057"
+ 56. Port Connectivity Checks: "seven_segment:comb_5056"
+ 57. Port Connectivity Checks: "seven_segment:comb_5055"
+ 58. Port Connectivity Checks: "seven_segment:comb_5054"
+ 59. Port Connectivity Checks: "seven_segment:comb_5053"
  60. Port Connectivity Checks: "lcd:lcd_control"
  61. Port Connectivity Checks: "rand:random2"
  62. Port Connectivity Checks: "attack:p2Attack4"
@@ -110,15 +110,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 09 14:51:37 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 09 15:20:33 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; BattleBoard                                 ;
 ; Top-level Entity Name              ; BattleBoard                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,844                                       ;
-;     Total combinational functions  ; 2,832                                       ;
-;     Dedicated logic registers      ; 565                                         ;
-; Total registers                    ; 565                                         ;
+; Total logic elements               ; 2,839                                       ;
+;     Total combinational functions  ; 2,827                                       ;
+;     Dedicated logic registers      ; 566                                         ;
+; Total registers                    ; 566                                         ;
 ; Total pins                         ; 155                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 57,600                                      ;
@@ -301,20 +301,20 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 2,844          ;
+; Estimated Total logic elements              ; 2,839          ;
 ;                                             ;                ;
-; Total combinational functions               ; 2832           ;
+; Total combinational functions               ; 2827           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 1520           ;
-;     -- 3 input functions                    ; 663            ;
-;     -- <=2 input functions                  ; 649            ;
+;     -- 4 input functions                    ; 1522           ;
+;     -- 3 input functions                    ; 659            ;
+;     -- <=2 input functions                  ; 646            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 2342           ;
+;     -- normal mode                          ; 2337           ;
 ;     -- arithmetic mode                      ; 490            ;
 ;                                             ;                ;
-; Total registers                             ; 565            ;
-;     -- Dedicated logic registers            ; 565            ;
+; Total registers                             ; 566            ;
+;     -- Dedicated logic registers            ; 566            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 155            ;
@@ -326,8 +326,8 @@ agreement for further details.
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 424            ;
-; Total fan-out                               ; 11318          ;
+; Maximum fan-out                             ; 425            ;
+; Total fan-out                               ; 11310          ;
 ; Average fan-out                             ; 3.03           ;
 +---------------------------------------------+----------------+
 
@@ -337,7 +337,7 @@ agreement for further details.
 +---------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                 ; Entity Name            ; Library Name ;
 +---------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |BattleBoard                                            ; 2832 (1264)         ; 565 (339)                 ; 57600       ; 6            ; 6       ; 0         ; 155  ; 0            ; |BattleBoard                                                                                                                                        ; BattleBoard            ; work         ;
+; |BattleBoard                                            ; 2827 (1265)         ; 566 (340)                 ; 57600       ; 6            ; 6       ; 0         ; 155  ; 0            ; |BattleBoard                                                                                                                                        ; BattleBoard            ; work         ;
 ;    |attack:p1Attack1|                                   ; 75 (34)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1                                                                                                                       ; attack                 ; work         ;
 ;       |lpm_divide:Div0|                                 ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
 ;          |lpm_divide_khm:auto_generated|                ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
@@ -346,15 +346,15 @@ agreement for further details.
 ;                   |add_sub_8pc:add_sub_1|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc            ; work         ;
 ;       |lpm_mult:Mult0|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1|lpm_mult:Mult0                                                                                                        ; lpm_mult               ; work         ;
 ;          |mult_2at:auto_generated|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1|lpm_mult:Mult0|mult_2at:auto_generated                                                                                ; mult_2at               ; work         ;
-;    |attack:p1Attack2|                                   ; 76 (34)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2                                                                                                                       ; attack                 ; work         ;
-;       |lpm_divide:Div0|                                 ; 42 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
-;          |lpm_divide_khm:auto_generated|                ; 42 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
-;             |sign_div_unsign_ekh:divider|               ; 42 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider                                             ; sign_div_unsign_ekh    ; work         ;
-;                |alt_u_div_94f:divider|                  ; 42 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider                       ; alt_u_div_94f          ; work         ;
+;    |attack:p1Attack2|                                   ; 77 (34)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2                                                                                                                       ; attack                 ; work         ;
+;       |lpm_divide:Div0|                                 ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
+;          |lpm_divide_khm:auto_generated|                ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
+;             |sign_div_unsign_ekh:divider|               ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider                                             ; sign_div_unsign_ekh    ; work         ;
+;                |alt_u_div_94f:divider|                  ; 43 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider                       ; alt_u_div_94f          ; work         ;
 ;                   |add_sub_8pc:add_sub_1|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc            ; work         ;
 ;       |lpm_mult:Mult0|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_mult:Mult0                                                                                                        ; lpm_mult               ; work         ;
 ;          |mult_2at:auto_generated|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_mult:Mult0|mult_2at:auto_generated                                                                                ; mult_2at               ; work         ;
-;    |attack:p1Attack3|                                   ; 80 (39)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3                                                                                                                       ; attack                 ; work         ;
+;    |attack:p1Attack3|                                   ; 79 (38)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3                                                                                                                       ; attack                 ; work         ;
 ;       |lpm_divide:Div0|                                 ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
 ;          |lpm_divide_khm:auto_generated|                ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
 ;             |sign_div_unsign_ekh:divider|               ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider                                             ; sign_div_unsign_ekh    ; work         ;
@@ -371,11 +371,11 @@ agreement for further details.
 ;                   |add_sub_8pc:add_sub_1|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack1|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc            ; work         ;
 ;       |lpm_mult:Mult0|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack1|lpm_mult:Mult0                                                                                                        ; lpm_mult               ; work         ;
 ;          |mult_2at:auto_generated|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack1|lpm_mult:Mult0|mult_2at:auto_generated                                                                                ; mult_2at               ; work         ;
-;    |attack:p2Attack2|                                   ; 78 (35)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2                                                                                                                       ; attack                 ; work         ;
-;       |lpm_divide:Div0|                                 ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
-;          |lpm_divide_khm:auto_generated|                ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
-;             |sign_div_unsign_ekh:divider|               ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider                                             ; sign_div_unsign_ekh    ; work         ;
-;                |alt_u_div_94f:divider|                  ; 43 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider                       ; alt_u_div_94f          ; work         ;
+;    |attack:p2Attack2|                                   ; 77 (35)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2                                                                                                                       ; attack                 ; work         ;
+;       |lpm_divide:Div0|                                 ; 42 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
+;          |lpm_divide_khm:auto_generated|                ; 42 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
+;             |sign_div_unsign_ekh:divider|               ; 42 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider                                             ; sign_div_unsign_ekh    ; work         ;
+;                |alt_u_div_94f:divider|                  ; 42 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider                       ; alt_u_div_94f          ; work         ;
 ;                   |add_sub_8pc:add_sub_1|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc            ; work         ;
 ;       |lpm_mult:Mult0|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_mult:Mult0                                                                                                        ; lpm_mult               ; work         ;
 ;          |mult_2at:auto_generated|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_mult:Mult0|mult_2at:auto_generated                                                                                ; mult_2at               ; work         ;
@@ -390,10 +390,10 @@ agreement for further details.
 ;    |attack:p2Attack4|                                   ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack4                                                                                                                       ; attack                 ; work         ;
 ;    |character:player1|                                  ; 26 (26)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|character:player1                                                                                                                      ; character              ; work         ;
 ;    |character:player2|                                  ; 27 (27)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|character:player2                                                                                                                      ; character              ; work         ;
-;    |clock:comb_5041|                                    ; 36 (36)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|clock:comb_5041                                                                                                                        ; clock                  ; work         ;
-;    |distance:dist|                                      ; 50 (50)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|distance:dist                                                                                                                          ; distance               ; work         ;
+;    |clock:comb_5059|                                    ; 36 (36)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|clock:comb_5059                                                                                                                        ; clock                  ; work         ;
+;    |distance:dist|                                      ; 47 (47)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|distance:dist                                                                                                                          ; distance               ; work         ;
 ;    |keyboard:key_control|                               ; 57 (57)             ; 42 (42)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|keyboard:key_control                                                                                                                   ; keyboard               ; work         ;
-;    |lcd:lcd_control|                                    ; 203 (203)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lcd:lcd_control                                                                                                                        ; lcd                    ; work         ;
+;    |lcd:lcd_control|                                    ; 202 (202)           ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lcd:lcd_control                                                                                                                        ; lcd                    ; work         ;
 ;    |lpm_divide:Div0|                                    ; 46 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div0                                                                                                                        ; lpm_divide             ; work         ;
 ;       |lpm_divide_ihm:auto_generated|                   ; 46 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div0|lpm_divide_ihm:auto_generated                                                                                          ; lpm_divide_ihm         ; work         ;
 ;          |sign_div_unsign_akh:divider|                  ; 46 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Div0|lpm_divide_ihm:auto_generated|sign_div_unsign_akh:divider                                                              ; sign_div_unsign_akh    ; work         ;
@@ -426,14 +426,14 @@ agreement for further details.
 ;       |lpm_divide_q9m:auto_generated|                   ; 62 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod3|lpm_divide_q9m:auto_generated                                                                                          ; lpm_divide_q9m         ; work         ;
 ;          |sign_div_unsign_fkh:divider|                  ; 62 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_fkh:divider                                                              ; sign_div_unsign_fkh    ; work         ;
 ;             |alt_u_div_i4f:divider|                     ; 62 (62)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|lpm_divide:Mod3|lpm_divide_q9m:auto_generated|sign_div_unsign_fkh:divider|alt_u_div_i4f:divider                                        ; alt_u_div_i4f          ; work         ;
-;    |point:pos1|                                         ; 34 (34)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|point:pos1                                                                                                                             ; point                  ; work         ;
-;    |point:pos2|                                         ; 32 (32)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|point:pos2                                                                                                                             ; point                  ; work         ;
-;    |seven_segment:comb_5035|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5035                                                                                                                ; seven_segment          ; work         ;
-;    |seven_segment:comb_5036|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5036                                                                                                                ; seven_segment          ; work         ;
-;    |seven_segment:comb_5037|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5037                                                                                                                ; seven_segment          ; work         ;
-;    |seven_segment:comb_5038|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5038                                                                                                                ; seven_segment          ; work         ;
-;    |seven_segment:comb_5039|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5039                                                                                                                ; seven_segment          ; work         ;
-;    |seven_segment:comb_5040|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5040                                                                                                                ; seven_segment          ; work         ;
+;    |point:pos1|                                         ; 32 (32)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|point:pos1                                                                                                                             ; point                  ; work         ;
+;    |point:pos2|                                         ; 33 (33)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|point:pos2                                                                                                                             ; point                  ; work         ;
+;    |seven_segment:comb_5053|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5053                                                                                                                ; seven_segment          ; work         ;
+;    |seven_segment:comb_5054|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5054                                                                                                                ; seven_segment          ; work         ;
+;    |seven_segment:comb_5055|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5055                                                                                                                ; seven_segment          ; work         ;
+;    |seven_segment:comb_5056|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5056                                                                                                                ; seven_segment          ; work         ;
+;    |seven_segment:comb_5057|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5057                                                                                                                ; seven_segment          ; work         ;
+;    |seven_segment:comb_5058|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5058                                                                                                                ; seven_segment          ; work         ;
 ;    |twoComp:xMoveA|                                     ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|twoComp:xMoveA                                                                                                                         ; twoComp                ; work         ;
 ;    |twoComp:yMoveA|                                     ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|twoComp:yMoveA                                                                                                                         ; twoComp                ; work         ;
 ;    |vga_adapter:VGA|                                    ; 98 (2)              ; 30 (0)                    ; 57600       ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA                                                                                                                        ; vga_adapter            ; work         ;
@@ -654,7 +654,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; hl6_y[3]                                ; Stuck at GND due to stuck port data_in ;
 ; hl6_y[1,2]                              ; Stuck at VCC due to stuck port data_in ;
 ; hl6_y[0]                                ; Stuck at GND due to stuck port data_in ;
-; colour[1]                               ; Stuck at GND due to stuck port data_in ;
 ; string[1..4]                            ; Stuck at GND due to stuck port data_in ;
 ; string[5]                               ; Stuck at VCC due to stuck port data_in ;
 ; string[6..8,10]                         ; Stuck at GND due to stuck port data_in ;
@@ -775,7 +774,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; S.prog                                  ; Stuck at GND due to stuck port data_in ;
 ; string[85]                              ; Merged with string[68]                 ;
 ; p2_x[2]                                 ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 380 ;                                        ;
+; Total Number of Removed Registers = 379 ;                                        ;
 +-----------------------------------------+----------------------------------------+
 
 
@@ -790,7 +789,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; rand:random1|seed[0] ; Stuck at VCC              ; rand:random1|num[0], rand:random1|seed[3], rand:random1|seed[2], rand:random1|seed[1], ;
 ;                      ; due to stuck port aload   ; attack:p1Attack4|damage[5], attack:p1Attack4|damage[4], attack:p1Attack4|damage[3],    ;
 ;                      ;                           ; attack:p1Attack4|damage[2], attack:p1Attack4|damage[1], attack:p1Attack4|damage[0]     ;
-; colour[1]            ; Stuck at GND              ; string[79], string[87]                                                                 ;
+; string[0]            ; Stuck at GND              ; string[8]                                                                              ;
+;                      ; due to stuck port data_in ;                                                                                        ;
+; string[2]            ; Stuck at GND              ; string[10]                                                                             ;
+;                      ; due to stuck port data_in ;                                                                                        ;
+; string[5]            ; Stuck at VCC              ; string[13]                                                                             ;
+;                      ; due to stuck port data_in ;                                                                                        ;
+; string[7]            ; Stuck at GND              ; string[15]                                                                             ;
 ;                      ; due to stuck port data_in ;                                                                                        ;
 +----------------------+---------------------------+----------------------------------------------------------------------------------------+
 
@@ -800,7 +805,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 565   ;
+; Total registers                              ; 566   ;
 ; Number of registers using Synchronous Clear  ; 60    ;
 ; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 133   ;
@@ -815,13 +820,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; attack:p2Attack2|load[1]                ; 6       ;
+; attack:p2Attack2|load[1]                ; 7       ;
 ; attack:p2Attack1|load[1]                ; 7       ;
 ; attack:p1Attack2|load[1]                ; 7       ;
 ; attack:p1Attack1|load[1]                ; 7       ;
 ; character:player1|health[7]             ; 3       ;
 ; point:pos1|y[2]                         ; 13      ;
-; point:pos2|y[1]                         ; 12      ;
+; point:pos2|y[1]                         ; 11      ;
 ; character:player2|health[7]             ; 4       ;
 ; point:pos2|x[2]                         ; 11      ;
 ; point:pos1|x[1]                         ; 13      ;
@@ -836,47 +841,47 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |BattleBoard|vga_adapter:VGA|vga_controller:controller|yCounter[4]                                             ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos1|y[0]                                                                                   ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |BattleBoard|vga_adapter:VGA|vga_controller:controller|yCounter[1]                                             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos1|y[1]                                                                                   ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos2|y[0]                                                                                   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos1|x[2]                                                                                   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos2|x[1]                                                                                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos1|x[0]                                                                                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|point:pos2|x[0]                                                                                   ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BattleBoard|p1_y[1]                                                                                           ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BattleBoard|p2_y[0]                                                                                           ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |BattleBoard|p2_x[6]                                                                                           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|p1_y[3]                                                                                           ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|p2_y[3]                                                                                           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |BattleBoard|p2_y[1]                                                                                           ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |BattleBoard|p2_x[5]                                                                                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|p1_y[6]                                                                                           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|p2_y[6]                                                                                           ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|string[158]                                                                                       ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|string[98]                                                                                        ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|p2_x[2]                                                                                           ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |BattleBoard|p1_x[2]                                                                                           ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|string[106]                                                                                       ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |BattleBoard|p2_x[0]                                                                                           ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |BattleBoard|p1_x[0]                                                                                           ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |BattleBoard|string[205]                                                                                       ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |BattleBoard|string[222]                                                                                       ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |BattleBoard|string[213]                                                                                       ;
 ; 8:1                ; 5 bits    ; 25 LEs        ; 15 LEs               ; 10 LEs                 ; Yes        ; |BattleBoard|p1_x[5]                                                                                           ;
 ; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |BattleBoard|loadA[0]                                                                                          ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |BattleBoard|string[195]                                                                                       ;
-; 12:1               ; 5 bits    ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |BattleBoard|aim[2]                                                                                            ;
-; 7:1                ; 18 bits   ; 72 LEs        ; 18 LEs               ; 54 LEs                 ; Yes        ; |BattleBoard|draw_counter[15]                                                                                  ;
-; 40:1               ; 5 bits    ; 130 LEs       ; 10 LEs               ; 120 LEs                ; Yes        ; |BattleBoard|yMove[0]                                                                                          ;
-; 40:1               ; 5 bits    ; 130 LEs       ; 10 LEs               ; 120 LEs                ; Yes        ; |BattleBoard|xMove[3]                                                                                          ;
-; 30:1               ; 4 bits    ; 80 LEs        ; 8 LEs                ; 72 LEs                 ; Yes        ; |BattleBoard|num2[8]                                                                                           ;
-; 40:1               ; 3 bits    ; 78 LEs        ; 6 LEs                ; 72 LEs                 ; Yes        ; |BattleBoard|num1[7]                                                                                           ;
+; 12:1               ; 5 bits    ; 40 LEs        ; 10 LEs               ; 30 LEs                 ; Yes        ; |BattleBoard|aim[1]                                                                                            ;
+; 7:1                ; 18 bits   ; 72 LEs        ; 18 LEs               ; 54 LEs                 ; Yes        ; |BattleBoard|draw_counter[17]                                                                                  ;
+; 40:1               ; 5 bits    ; 130 LEs       ; 10 LEs               ; 120 LEs                ; Yes        ; |BattleBoard|yMove[2]                                                                                          ;
+; 40:1               ; 5 bits    ; 130 LEs       ; 10 LEs               ; 120 LEs                ; Yes        ; |BattleBoard|xMove[4]                                                                                          ;
+; 30:1               ; 4 bits    ; 80 LEs        ; 8 LEs                ; 72 LEs                 ; Yes        ; |BattleBoard|num2[5]                                                                                           ;
+; 40:1               ; 3 bits    ; 78 LEs        ; 6 LEs                ; 72 LEs                 ; Yes        ; |BattleBoard|num1[6]                                                                                           ;
 ; 48:1               ; 3 bits    ; 96 LEs        ; 24 LEs               ; 72 LEs                 ; Yes        ; |BattleBoard|num1[0]                                                                                           ;
-; 72:1               ; 2 bits    ; 96 LEs        ; 22 LEs               ; 74 LEs                 ; Yes        ; |BattleBoard|num2[2]                                                                                           ;
+; 72:1               ; 2 bits    ; 96 LEs        ; 22 LEs               ; 74 LEs                 ; Yes        ; |BattleBoard|num2[0]                                                                                           ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p2Attack1|damage[1]                                                                        ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p2Attack2|damage[3]                                                                        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p2Attack3|damage[1]                                                                        ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p1Attack1|damage[0]                                                                        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p2Attack3|damage[0]                                                                        ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p1Attack1|damage[1]                                                                        ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p1Attack2|damage[2]                                                                        ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p1Attack3|damage[2]                                                                        ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |BattleBoard|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_60g1:auto_generated|mux_0nb:mux3|result_node[0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |BattleBoard|attack:p1Attack3|damage[1]                                                                        ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |BattleBoard|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_60g1:auto_generated|mux_0nb:mux3|result_node[1] ;
 ; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |BattleBoard|S                                                                                                 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BattleBoard|WideOr98                                                                                          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BattleBoard|WideOr128                                                                                         ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |BattleBoard|chChoice2                                                                                         ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BattleBoard|S                                                                                                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BattleBoard|S                                                                                                 ;
 ; 6:1                ; 12 bits   ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; No         ; |BattleBoard|hit2                                                                                              ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BattleBoard|chChoice2                                                                                         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BattleBoard|chChoice1                                                                                         ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |BattleBoard|Selector318                                                                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------+
 
@@ -2095,7 +2100,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "seven_segment:comb_5040"                                                                                                                                                        ;
+; Port Connectivity Checks: "seven_segment:comb_5058"                                                                                                                                                        ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2104,7 +2109,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "seven_segment:comb_5039"                                                                                                                                                        ;
+; Port Connectivity Checks: "seven_segment:comb_5057"                                                                                                                                                        ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2113,7 +2118,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "seven_segment:comb_5038"                                                                                                                                                        ;
+; Port Connectivity Checks: "seven_segment:comb_5056"                                                                                                                                                        ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2122,7 +2127,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "seven_segment:comb_5037"                                                                                                                                                        ;
+; Port Connectivity Checks: "seven_segment:comb_5055"                                                                                                                                                        ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2131,7 +2136,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "seven_segment:comb_5036"                                                                                                                                                        ;
+; Port Connectivity Checks: "seven_segment:comb_5054"                                                                                                                                                        ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2140,7 +2145,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "seven_segment:comb_5035"                                                                                                                                                        ;
+; Port Connectivity Checks: "seven_segment:comb_5053"                                                                                                                                                        ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
 +------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2216,7 +2221,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 ; i       ; Input  ; Warning  ; Input port expression (2 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "i[2..2]" will be connected to GND. ;
 ; special ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
-; color   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
 +---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -2290,7 +2294,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 ; i       ; Input  ; Warning  ; Input port expression (2 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "i[2..2]" will be connected to GND. ;
 ; special ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
-; color   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                       ;
 +---------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -2311,7 +2314,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 155                         ;
-; cycloneiii_ff         ; 565                         ;
+; cycloneiii_ff         ; 566                         ;
 ;     CLR               ; 37                          ;
 ;     ENA               ; 62                          ;
 ;     ENA CLR           ; 96                          ;
@@ -2320,24 +2323,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 3                           ;
 ;     SCLR              ; 26                          ;
 ;     SLD               ; 1                           ;
-;     plain             ; 306                         ;
-; cycloneiii_lcell_comb ; 2844                        ;
+;     plain             ; 307                         ;
+; cycloneiii_lcell_comb ; 2839                        ;
 ;     arith             ; 490                         ;
 ;         2 data inputs ; 183                         ;
 ;         3 data inputs ; 307                         ;
-;     normal            ; 2354                        ;
+;     normal            ; 2349                        ;
 ;         0 data inputs ; 74                          ;
 ;         1 data inputs ; 27                          ;
-;         2 data inputs ; 377                         ;
-;         3 data inputs ; 356                         ;
-;         4 data inputs ; 1520                        ;
+;         2 data inputs ; 374                         ;
+;         3 data inputs ; 352                         ;
+;         4 data inputs ; 1522                        ;
 ; cycloneiii_mac_mult   ; 6                           ;
 ; cycloneiii_mac_out    ; 6                           ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 9                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 18.20                       ;
-; Average LUT depth     ; 6.91                        ;
+; Average LUT depth     ; 6.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2356,7 +2359,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Dec 09 14:51:16 2021
+    Info: Processing started: Thu Dec 09 15:20:13 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BattleBoard -c BattleBoard
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2370,21 +2373,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file vga_ada
     Info (12023): Found entity 1: vga_adapter File: M:/ActualProject/287Project/vga_adapter/vga_adapter.v Line: 78
 Warning (10463): Verilog HDL Declaration warning at BattleBoard.v(97): "dist" is SystemVerilog-2005 keyword File: M:/ActualProject/287Project/BattleBoard.v Line: 97
 Warning (10463): Verilog HDL Declaration warning at BattleBoard.v(203): "string" is SystemVerilog-2005 keyword File: M:/ActualProject/287Project/BattleBoard.v Line: 203
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1594): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1594
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1605): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1605
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1616): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1616
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1627): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1627
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1638): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1638
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1649): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1649
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1660): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1660
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1671): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1671
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1682): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1682
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1693): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1693
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1704): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1704
-Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1715): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1715
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1595): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1595
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1606): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1606
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1617): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1617
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1628): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1628
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1639): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1639
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1650): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1650
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1661): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1661
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1672): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1672
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1683): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1683
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1694): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1694
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1705): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1705
+Warning (10229): Verilog HDL Expression warning at BattleBoard.v(1716): truncated literal to match 18 bits File: M:/ActualProject/287Project/BattleBoard.v Line: 1716
 Info (12021): Found 2 design units, including 2 entities, in source file battleboard.v
     Info (12023): Found entity 1: BattleBoard File: M:/ActualProject/287Project/BattleBoard.v Line: 1
-    Info (12023): Found entity 2: clock File: M:/ActualProject/287Project/BattleBoard.v Line: 1854
+    Info (12023): Found entity 2: clock File: M:/ActualProject/287Project/BattleBoard.v Line: 1855
 Info (12021): Found 1 design units, including 1 entities, in source file seven_segment.v
     Info (12023): Found entity 1: seven_segment File: M:/ActualProject/287Project/seven_segment.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file character.v
@@ -2427,43 +2430,44 @@ Warning (10229): Verilog HDL Expression warning at distance.v(81): truncated lit
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/distance.v
     Info (12023): Found entity 1: distance File: M:/ActualProject/287Project/output_files/distance.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(206): created implicit net for "check" File: M:/ActualProject/287Project/BattleBoard.v Line: 206
-Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1458): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1458
 Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1459): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1459
 Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1460): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1460
-Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1463): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1463
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1461): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1461
 Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1464): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1464
 Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1465): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1465
-Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1530): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1530
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1466): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1466
+Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1531): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1531
 Info (12127): Elaborating entity "BattleBoard" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1491): object "grid_initing" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1491
-Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1491): object "p1_initing" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1491
-Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1491): object "p2_initing" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1491
-Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1529): object "i" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1529
+Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1492): object "grid_initing" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1492
+Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1492): object "p1_initing" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1492
+Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1492): object "p2_initing" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1492
+Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1495): object "p2_colour" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1495
+Warning (10036): Verilog HDL or VHDL warning at BattleBoard.v(1530): object "i" assigned a value but never read File: M:/ActualProject/287Project/BattleBoard.v Line: 1530
 Warning (10272): Verilog HDL Case Statement warning at BattleBoard.v(399): case item expression covers a value already covered by a previous case item File: M:/ActualProject/287Project/BattleBoard.v Line: 399
-Warning (10272): Verilog HDL Case Statement warning at BattleBoard.v(610): case item expression covers a value already covered by a previous case item File: M:/ActualProject/287Project/BattleBoard.v Line: 610
+Warning (10272): Verilog HDL Case Statement warning at BattleBoard.v(611): case item expression covers a value already covered by a previous case item File: M:/ActualProject/287Project/BattleBoard.v Line: 611
 Info (10264): Verilog HDL Case Statement information at BattleBoard.v(213): all case item expressions in this case statement are onehot File: M:/ActualProject/287Project/BattleBoard.v Line: 213
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1175): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1175
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1179): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1179
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1230): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1230
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1233): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1233
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1299): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1299
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1303): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1303
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1353): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1353
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1356): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1356
-Info (10264): Verilog HDL Case Statement information at BattleBoard.v(1119): all case item expressions in this case statement are onehot File: M:/ActualProject/287Project/BattleBoard.v Line: 1119
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1427): truncated value with size 32 to match size of target (5) File: M:/ActualProject/287Project/BattleBoard.v Line: 1427
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1176): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1176
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1180): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1180
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1231): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1231
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1234): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1234
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1300): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1300
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1304): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1304
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1354): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1354
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1357): truncated value with size 32 to match size of target (9) File: M:/ActualProject/287Project/BattleBoard.v Line: 1357
+Info (10264): Verilog HDL Case Statement information at BattleBoard.v(1120): all case item expressions in this case statement are onehot File: M:/ActualProject/287Project/BattleBoard.v Line: 1120
 Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1428): truncated value with size 32 to match size of target (5) File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
 Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1429): truncated value with size 32 to match size of target (5) File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1432): truncated value with size 32 to match size of target (5) File: M:/ActualProject/287Project/BattleBoard.v Line: 1432
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1430): truncated value with size 32 to match size of target (5) File: M:/ActualProject/287Project/BattleBoard.v Line: 1430
 Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1433): truncated value with size 32 to match size of target (5) File: M:/ActualProject/287Project/BattleBoard.v Line: 1433
 Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1434): truncated value with size 32 to match size of target (5) File: M:/ActualProject/287Project/BattleBoard.v Line: 1434
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1557): truncated value with size 9 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1557
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1773): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1773
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1780): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1780
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1813): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1813
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1820): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1820
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1828): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1828
-Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1834): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1834
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1435): truncated value with size 32 to match size of target (5) File: M:/ActualProject/287Project/BattleBoard.v Line: 1435
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1558): truncated value with size 9 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1558
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1774): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1774
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1781): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1781
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1814): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1814
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1821): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1821
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1829): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1829
+Warning (10230): Verilog HDL assignment warning at BattleBoard.v(1835): truncated value with size 32 to match size of target (8) File: M:/ActualProject/287Project/BattleBoard.v Line: 1835
 Warning (10034): Output port "LEDG" at BattleBoard.v(8) has no driver File: M:/ActualProject/287Project/BattleBoard.v Line: 8
 Info (12128): Elaborating entity "twoComp" for hierarchy "twoComp:yMoveA" File: M:/ActualProject/287Project/BattleBoard.v Line: 94
 Info (12128): Elaborating entity "distance" for hierarchy "distance:dist" File: M:/ActualProject/287Project/BattleBoard.v Line: 97
@@ -2498,8 +2502,8 @@ Warning (10036): Verilog HDL or VHDL warning at keyboard.v(9): object "prevKey" 
 Info (12128): Elaborating entity "lcd" for hierarchy "lcd:lcd_control" File: M:/ActualProject/287Project/BattleBoard.v Line: 206
 Warning (10230): Verilog HDL assignment warning at lcd.v(61): truncated value with size 32 to match size of target (6) File: M:/ActualProject/287Project/lcd.v Line: 61
 Warning (10034): Output port "check" at lcd.v(10) has no driver File: M:/ActualProject/287Project/lcd.v Line: 10
-Info (12128): Elaborating entity "seven_segment" for hierarchy "seven_segment:comb_5035" File: M:/ActualProject/287Project/BattleBoard.v Line: 1458
-Info (12128): Elaborating entity "vga_adapter" for hierarchy "vga_adapter:VGA" File: M:/ActualProject/287Project/BattleBoard.v Line: 1485
+Info (12128): Elaborating entity "seven_segment" for hierarchy "seven_segment:comb_5053" File: M:/ActualProject/287Project/BattleBoard.v Line: 1459
+Info (12128): Elaborating entity "vga_adapter" for hierarchy "vga_adapter:VGA" File: M:/ActualProject/287Project/BattleBoard.v Line: 1486
 Info (12128): Elaborating entity "vga_address_translator" for hierarchy "vga_adapter:VGA|vga_address_translator:user_input_translator" File: M:/ActualProject/287Project/vga_adapter/vga_adapter.v Line: 192
 Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory" File: M:/ActualProject/287Project/vga_adapter/vga_adapter.v Line: 213
 Info (12130): Elaborated megafunction instantiation "vga_adapter:VGA|altsyncram:VideoMemory" File: M:/ActualProject/287Project/vga_adapter/vga_adapter.v Line: 213
@@ -2547,16 +2551,16 @@ Info (12133): Instantiated megafunction "vga_adapter:VGA|vga_pll:mypll|altpll:al
     Info (12134): Parameter "clk0_multiply_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
 Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_adapter:VGA|vga_controller:controller" File: M:/ActualProject/287Project/vga_adapter/vga_adapter.v Line: 252
-Info (12128): Elaborating entity "clock" for hierarchy "clock:comb_5041" File: M:/ActualProject/287Project/BattleBoard.v Line: 1530
+Info (12128): Elaborating entity "clock" for hierarchy "clock:comb_5059" File: M:/ActualProject/287Project/BattleBoard.v Line: 1531
 Info (278001): Inferred 20 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1427
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div3" File: M:/ActualProject/287Project/BattleBoard.v Line: 1434
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: M:/ActualProject/287Project/BattleBoard.v Line: 1433
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: M:/ActualProject/287Project/BattleBoard.v Line: 1433
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: M:/ActualProject/287Project/BattleBoard.v Line: 1432
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: M:/ActualProject/287Project/BattleBoard.v Line: 1430
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div3" File: M:/ActualProject/287Project/BattleBoard.v Line: 1435
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: M:/ActualProject/287Project/BattleBoard.v Line: 1434
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div2" File: M:/ActualProject/287Project/BattleBoard.v Line: 1434
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: M:/ActualProject/287Project/BattleBoard.v Line: 1433
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "attack:p2Attack1|Mult0" File: M:/ActualProject/287Project/attack.v Line: 144
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "attack:p2Attack1|Div0" File: M:/ActualProject/287Project/attack.v Line: 144
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "attack:p2Attack3|Mult0" File: M:/ActualProject/287Project/attack.v Line: 144
@@ -2569,8 +2573,8 @@ Info (278001): Inferred 20 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "attack:p1Attack3|Div0" File: M:/ActualProject/287Project/attack.v Line: 144
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "attack:p1Attack2|Mult0" File: M:/ActualProject/287Project/attack.v Line: 144
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "attack:p1Attack2|Div0" File: M:/ActualProject/287Project/attack.v Line: 144
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
-Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: M:/ActualProject/287Project/BattleBoard.v Line: 1430
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: M:/ActualProject/287Project/BattleBoard.v Line: 1430
     Info (12134): Parameter "LPM_WIDTHN" = "9"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2585,16 +2589,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/add_
     Info (12023): Found entity 1: add_sub_7pc File: M:/ActualProject/287Project/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
     Info (12023): Found entity 1: add_sub_8pc File: M:/ActualProject/287Project/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1" File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
-Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter: File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1" File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
+Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter: File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
     Info (12134): Parameter "LPM_WIDTHN" = "9"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_q9m.tdf
     Info (12023): Found entity 1: lpm_divide_q9m File: M:/ActualProject/287Project/db/lpm_divide_q9m.tdf Line: 25
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: M:/ActualProject/287Project/BattleBoard.v Line: 1429
     Info (12134): Parameter "LPM_WIDTHN" = "7"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2605,8 +2609,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_akh File: M:/ActualProject/287Project/db/sign_div_unsign_akh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_84f.tdf
     Info (12023): Found entity 1: alt_u_div_84f File: M:/ActualProject/287Project/db/alt_u_div_84f.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1427
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: M:/ActualProject/287Project/BattleBoard.v Line: 1427
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: M:/ActualProject/287Project/BattleBoard.v Line: 1428
     Info (12134): Parameter "LPM_WIDTHN" = "9"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
@@ -2761,11 +2765,11 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 24 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "Add56~0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1797
-    Info (17048): Logic cell "Add56~2" File: M:/ActualProject/287Project/BattleBoard.v Line: 1797
-    Info (17048): Logic cell "Add56~4" File: M:/ActualProject/287Project/BattleBoard.v Line: 1797
-    Info (17048): Logic cell "Add56~12" File: M:/ActualProject/287Project/BattleBoard.v Line: 1797
-    Info (17048): Logic cell "Add56~14" File: M:/ActualProject/287Project/BattleBoard.v Line: 1797
+    Info (17048): Logic cell "Add56~0" File: M:/ActualProject/287Project/BattleBoard.v Line: 1798
+    Info (17048): Logic cell "Add56~2" File: M:/ActualProject/287Project/BattleBoard.v Line: 1798
+    Info (17048): Logic cell "Add56~4" File: M:/ActualProject/287Project/BattleBoard.v Line: 1798
+    Info (17048): Logic cell "Add56~12" File: M:/ActualProject/287Project/BattleBoard.v Line: 1798
+    Info (17048): Logic cell "Add56~14" File: M:/ActualProject/287Project/BattleBoard.v Line: 1798
 Info (144001): Generated suppressed messages file M:/ActualProject/287Project/output_files/BattleBoard.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
@@ -2789,18 +2793,18 @@ Warning (21074): Design contains 19 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[15]" File: M:/ActualProject/287Project/BattleBoard.v Line: 6
     Warning (15610): No output dependent on input pin "SW[16]" File: M:/ActualProject/287Project/BattleBoard.v Line: 6
     Warning (15610): No output dependent on input pin "SW[17]" File: M:/ActualProject/287Project/BattleBoard.v Line: 6
-Info (21057): Implemented 3063 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3055 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 25 input pins
     Info (21059): Implemented 130 output pins
-    Info (21061): Implemented 2892 logic cells
+    Info (21061): Implemented 2884 logic cells
     Info (21064): Implemented 9 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 6 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 213 warnings
-    Info: Peak virtual memory: 4834 megabytes
-    Info: Processing ended: Thu Dec 09 14:51:37 2021
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 214 warnings
+    Info: Peak virtual memory: 4818 megabytes
+    Info: Processing ended: Thu Dec 09 15:20:34 2021
     Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+

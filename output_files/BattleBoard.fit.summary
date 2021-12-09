@@ -1,14 +1,14 @@
-Fitter Status : Successful - Thu Dec 09 14:52:08 2021
+Fitter Status : Successful - Thu Dec 09 15:21:04 2021
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : BattleBoard
 Top-level Entity Name : BattleBoard
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 2,876 / 114,480 ( 3 % )
-    Total combinational functions : 2,833 / 114,480 ( 2 % )
-    Dedicated logic registers : 565 / 114,480 ( < 1 % )
-Total registers : 565
+Total logic elements : 2,872 / 114,480 ( 3 % )
+    Total combinational functions : 2,828 / 114,480 ( 2 % )
+    Dedicated logic registers : 566 / 114,480 ( < 1 % )
+Total registers : 566
 Total pins : 155 / 529 ( 29 % )
 Total virtual pins : 0
 Total memory bits : 57,600 / 3,981,312 ( 1 % )

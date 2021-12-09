@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at BattleBoard.v(180): always construct contains both blocking and non-blocking assignments File: M:/287Project/BattleBoard.v Line: 180
+Warning (10268): Verilog HDL information at BattleBoard.v(211): always construct contains both blocking and non-blocking assignments File: M:/287Project/BattleBoard.v Line: 211

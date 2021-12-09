@@ -19,28 +19,29 @@ module attack(
 		 always @(*) begin
 		       case ({i, j}) 
 						 4'd0: begin
-							 maxDamage <= 42;
-							 spread <= 7;
-							 range <= 3;
-							 clip <= 2;
+							 maxDamage <= 42; // FireBall
+							 spread <= 5;
+							 range <= 2;
+							 clip <= 3;
 						 end
 					    4'd1: begin
-							  maxDamage <= 50;
+							  maxDamage <= 50; // Flaming Sword
 						     spread <= 5;
-							  range <= 2;
+							  range <= 1;
 							  clip <= 2;
 						 end
 						 4'd2: begin
-							  maxDamage <= 18;
-						  	  spread <= 3;
-							  range <= 5;
-							  clip <= 1;
+							  maxDamage <= 21; // Nova Slice
+						  	  spread <= 7;
+							  range <= 1;
+							  clip <= 3; 
 						 end
 						 4'd3: begin
-							  maxDamage <= 30;
-						  	  spread <= 3;
-							  range <= 2;
-							  clip <= 2;
+							  
+							  maxDamage <= 0;
+						  	  spread <= 0;
+							  range <= 0;
+							  clip <= 0;
 						 end
 						 4'd4: begin
 							  maxDamage <= 35;
@@ -61,10 +62,10 @@ module attack(
 							  clip <= 2;
 						 end
 						 4'd7: begin
-							  maxDamage <= 25;
-							  spread <= 5;
-							  range <= 2;
-							  clip <= 1;
+							  maxDamage <= 0;
+						  	  spread <= 0;
+							  range <= 0;
+							  clip <= 0;
 						 end 
 						 4'd8: begin
 							  maxDamage <= 25;
@@ -85,10 +86,10 @@ module attack(
 							 clip <= 2;
                    end
 						 4'd11: begin
-							  maxDamage <= 42;
-							 spread <= 3;
-							 range <= 3;
-							 clip <= 3;
+							  maxDamage <= 0;
+						  	  spread <= 0;
+							  range <= 0;
+							  clip <= 0;
 						 end
 						 4'd12: begin
 							  maxDamage <= 28;
@@ -109,10 +110,10 @@ module attack(
 							 clip <= 1;
 						 end
 						 4'd15: begin
-						    maxDamage <= 45;
-							 spread <= 5;
-							 range <= 2;
-							 clip <= 5;
+						     maxDamage <= 0;
+						  	  spread <= 0;
+							  range <= 0;
+							  clip <= 0;
 				       end		 
 					endcase 
 		 end

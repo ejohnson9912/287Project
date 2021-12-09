@@ -7,4 +7,4 @@ DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,attack:p2Attack3|lpm_mult:Mult0|mult_0at
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,attack:p2Attack2|lpm_mult:Mult0|mult_2at:auto_generated|mac_out2,
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,attack:p2Attack1|lpm_mult:Mult0|mult_2at:auto_generated|mac_out2,
 DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,attack:p2Attack4|lpm_mult:Mult0|mult_2at:auto_generated|mac_out2,
-PORT_SWAPPING,PORT_SWAPPING_FINISHED,attack:p2Attack3|lpm_mult:Mult0|mult_0at:auto_generated|mac_mult1,
+PORT_SWAPPING,PORT_SWAPPING_FINISHED,attack:p1Attack3|lpm_mult:Mult0|mult_0at:auto_generated|mac_mult1,

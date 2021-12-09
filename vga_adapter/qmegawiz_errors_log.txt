@@ -1,0 +1,10 @@
+
+
+C:/Users/butler57/Downloads/cscb58-project-master (2)/cscb58-project-master/vga_adapter/vga_pll.v
+
+Nov 20 10PM:25:15>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/butler57/Downloads/cscb58-project-master (2)/cscb58-project-master/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)

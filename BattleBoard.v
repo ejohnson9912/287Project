@@ -1464,8 +1464,415 @@ module BattleBoard(
     seven_segment(tens2, HEX5);
 	 seven_segment(huns2, HEX6);
 	 
+
+	 	 /* Start VGA Fuckery */
+
+	vga_adapter VGA(
+  .resetn(1'b1),
+  .clock(CLOCK_50),
+  .colour(colour),
+  .x(x),
+  .y(y),
+  .plot(1'b1),
+  /* Signals for the DAC to drive the monitor. */
+  .VGA_R(VGA_R),
+  .VGA_G(VGA_G),
+  .VGA_B(VGA_B),
+  .VGA_HS(VGA_HS),
+  .VGA_VS(VGA_VS),
+  .VGA_BLANK(VGA_BLANK_N),
+  .VGA_SYNC(VGA_SYNC_N),
+  .VGA_CLK(VGA_CLK));
+defparam VGA.RESOLUTION = "160x120";
+defparam VGA.MONOCHROME = "FALSE";
+defparam VGA.BITS_PER_COLOUR_CHANNEL = 1;
+defparam VGA.BACKGROUND_IMAGE = "black.mif";
+reg [6:0] vgastate;
+reg grid_initing, p1_initing, p2_initing;
+reg [7:0] x, y;
+reg [7:0] vl1_x, vl1_y, vl2_x, vl2_y, vl3_x, vl3_y, vl4_x, vl4_y, vl5_x, vl5_y, vl6_x, vl6_y;
+reg [2:0] line_colour, bg_colour, p1_colour, p2_colour;
+reg [7:0] hl1_x, hl1_y, hl2_x, hl2_y, hl3_x, hl3_y, hl4_x, hl4_y, hl5_x, hl5_y, hl6_x, hl6_y;
+reg [7:0] p1_x, p1_y, p2_x, p2_y;
+reg [2:0] colour;
+reg [17:0] draw_counter;
+wire frame;
+reg [6:0] state;
+
+localparam
+  RESET_BLACK = 7'b0000000,
+  INIT_GRID = 7'b0000001,
+  INIT_P1 = 7'b0000010,
+  INIT_P2 = 7'b0000011,
+  IDLE = 7'b0000100,
+  ERASE_P1 = 7'b0000101,
+  UPDATE_P1 = 7'b0000110,
+  DRAW_P1 = 7'b0000111,
+  ERASE_P2 = 7'b0001000,
+  UPDATE_P2 = 7'b0001001,
+  DRAW_P2 = 7'b0001010,
+  P1_WINS = 7'b0001011,
+  P2_WINS = 7'b0001100,
+  DRAW_VL1 = 7'b0001101,
+  DRAW_VL2 = 7'b0001110,
+  DRAW_VL3 = 7'b0001111,
+  DRAW_VL4 = 7'b0010000,
+  DRAW_VL5 = 7'b0010001,
+  DRAW_VL6 = 7'b0010010,
+  DRAW_HL1 = 7'b0010011,
+  DRAW_HL2 = 7'b0010100,
+  DRAW_HL3 = 7'b0010101,
+  DRAW_HL4 = 7'b0010110,
+  DRAW_HL5 = 7'b0010111,
+  DRAW_HL6 = 7'b0011000;
+
+    reg [3:0]i;
+clock(.clock(CLOCK_50), .clk(frame));
+
+always @(posedge CLOCK_50) begin
+  grid_initing = 1'b0;
+  p1_initing = 1'b0;
+  p2_initing = 1'b0;
+  bg_colour = 3'b000;
+  line_colour = 3'b101;
+  p1_colour = 3'b001;
+  p2_colour = 3'b100;
+  colour = bg_colour;
+  x = 8'b00000000;
+  y = 8'b00000000;
+  i = 0;
+
+  if (~KEY[0]) begin
+    state <= RESET_BLACK;
+  end /* else if (~KEY[1]) begin
+		p1_x = p1_x + 1;
+	end else if (~KEY[2]) begin
+		p2_x = p2_x + 1;
+	end */
+
+  case (state)
+    RESET_BLACK: begin
+      if (draw_counter < 17'b10000000000000000) begin
+        x = draw_counter[7:0];
+        y = draw_counter[16:8];
+        draw_counter = draw_counter + 1'b1;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= INIT_GRID;
+      end
+    end
+    INIT_GRID: begin
+      vl1_x = 0;
+      vl1_y = 0;
+      hl1_x = 0; // Top horizontal line x
+      hl1_y = 0; // Top horizontal line y
+      vl2_x = 22; 
+      vl2_y = 0;
+      hl2_x = 0;;
+      hl2_y = 22;
+      vl3_x = 46;
+      vl3_y = 0;
+      hl3_x = 0;
+      hl3_y = 46;
+      vl4_x = 70;
+      vl4_y = 0;
+      hl4_x = 0;
+      hl4_y = 70;
+      vl5_x = 94;
+      vl5_y = 0;
+      hl5_x = 0;
+      hl5_y = 94;
+      vl6_x = 118;
+      vl6_y = 0;
+      hl6_x = 0;
+      hl6_y = 118;
+      colour = line_colour;
+//      state <= DRAW_VL1;
+		state <= INIT_P1;
+    end
+    DRAW_VL1: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = vl1_x + draw_counter[9:8];
+        y = vl1_y + draw_counter[7:0];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_HL1;
+      end
+    end
+    DRAW_HL1: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = hl1_x + draw_counter[7:1];
+        y = hl1_y + draw_counter[9:8];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_VL2;
+      end
+    end
+    DRAW_VL2: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = vl2_x + draw_counter[9:8];
+        y = vl2_y + draw_counter[7:0];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_HL2;
+      end
+    end
+    DRAW_HL2: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = hl2_x + draw_counter[7:1];
+        y = hl2_y + draw_counter[9:8];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_VL3;
+      end
+    end
+    DRAW_VL3: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = vl3_x + draw_counter[9:8];
+        y = vl3_y + draw_counter[7:0];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_HL3;
+      end
+    end
+    DRAW_HL3: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = hl3_x + draw_counter[7:1];
+        y = hl3_y + draw_counter[9:8];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_VL4;
+      end
+    end
+    DRAW_VL4: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = vl4_x + draw_counter[9:8];
+        y = vl4_y + draw_counter[7:0];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_HL4;
+      end
+    end
+    DRAW_HL4: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = hl4_x + draw_counter[7:1];
+        y = hl4_y + draw_counter[9:8];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_VL5;
+      end
+    end
+    DRAW_VL5: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = vl5_x + draw_counter[9:8];
+        y = vl5_y + draw_counter[7:0];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_HL5;
+      end
+    end
+    DRAW_HL5: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = hl5_x + draw_counter[7:1];
+        y = hl5_y + draw_counter[9:8];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_VL6;
+      end
+    end
+    DRAW_VL6: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = vl6_x + draw_counter[9:8];
+        y = vl6_y + draw_counter[7:0];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_HL6;
+      end
+    end
+    DRAW_HL6: begin
+      if (draw_counter < 18'd1000000000) begin
+        x = hl6_x + draw_counter[7:1];
+        y = hl6_y + draw_counter[9:8];
+        draw_counter = draw_counter + 1'b1;
+        colour = line_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= ERASE_P1;
+      end
+    end
+    INIT_P1: begin
+      if (draw_counter < 6'b100000) begin
+        p1_x = 8'd82;
+        p1_y = 8'd82;
+        x = p1_x + draw_counter[1:0];
+        y = p1_y + draw_counter[3:2];
+        draw_counter = draw_counter + 1'b1;
+        colour = p1_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= INIT_P2;
+      end
+    end
+    INIT_P2: begin
+      if (draw_counter < 6'b100000) begin
+        p2_x = 8'd106;
+        p2_y = 8'd106;
+        x = p2_x + draw_counter[1:0];
+        y = p2_y + draw_counter[3:2];
+        draw_counter = draw_counter + 1'b1;
+        colour = p2_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= DRAW_VL1;
+      end
+    end
+    IDLE: begin
+      if (frame) begin
+        state <= ERASE_P1;
+      end
+    end
+    ERASE_P1: begin
+      if (draw_counter < 6'b100000) begin
+        x = p1_x + draw_counter[1:0];
+        y = p1_y + draw_counter[3:2];
+        draw_counter = draw_counter + 1'b1;
+        colour = 3'b000;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= UPDATE_P1;
+      end
+    end
+    UPDATE_P1: begin
+      if (x1 == 1) begin
+			p1_x = {5'd0, x1};
+			p1_x = 11;
+		end else begin
+			p1_x = {5'd0, x1};
+			p1_x = ((p1_x - 1) * 24) + 11;
+		end
+		if (y1 == 1) begin
+			p1_y = {5'd0, y1};
+			p1_y = 11;
+		end else begin
+			p1_y = {5'd0, y1};
+			p1_y = ((p1_y - 1) * 24) + 11;
+		end
+      state <= DRAW_P1;
+    end
+    DRAW_P1: begin
+      if (draw_counter < 6'b100000) begin
+        x = p1_x + draw_counter[1:0];
+        y = p1_y + draw_counter[3:2];
+        draw_counter = draw_counter + 1'b1;
+        colour = p1_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= ERASE_P2;
+      end
+    end
+    ERASE_P2: begin
+      if (draw_counter < 6'b100000) begin
+        x = p2_x + draw_counter[1:0];
+        y = p2_y + draw_counter[3:2];
+        draw_counter = draw_counter + 1'b1;
+        colour = 3'b000;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= UPDATE_P2;
+        //state <= DRAW_VL1;
+      end
+    end
+    UPDATE_P2: begin
+		if (x2 == 1) begin
+			p2_x = {5'd0, x2};
+			p2_x = 11;
+		end else begin
+			p2_x = {5'd0, x2};
+			p2_x = ((p2_x - 1) * 24) + 11;
+		end
+		if (y2 == 1) begin
+			p2_y = {5'd0, y2};
+			p2_y = 11;
+		end else begin
+			p2_y = {5'd0, y2};
+			p2_y = ((p2_y - 1) * 24) + 11;
+		end
+//		p2_x = {5'd0, x2};
+//		p2_y = {5'd0, y2};
+		if (~KEY[1]) begin
+			if (p1_x >= 5) begin
+				p1_x = 1;
+			end else begin
+				p1_x = p1_x + 1;
+			end
+		end else if (~KEY[2]) begin
+			if (p2_x >= 5) begin
+				p2_x = 1;
+			end else begin
+				p2_x = p2_x + 1;
+			end
+		end
+      // TODO: Update p2
+      state <= DRAW_P2;
+    end
+    DRAW_P2: begin
+      if (draw_counter < 6'b100000) begin
+        x = p2_x + draw_counter[1:0];
+        y = p2_y + draw_counter[3:2];
+        draw_counter = draw_counter + 1'b1;
+        colour = p2_colour;
+      end else begin
+        draw_counter = 8'b00000000;
+        state <= IDLE;
+      end
+    end
+  endcase
+end
+endmodule
+module clock ( //Coconut.jpg
+  input clock,
+  output clk
+);
+
+reg [19:0] frame_counter;
+reg frame;
+always@(posedge clock)
+  begin
+    if (frame_counter == 20'b0) begin
+      frame_counter = 20'd833332;  // This divisor gives us ~60 frames per second
+      frame = 1'b1;
+    end else begin
+      frame_counter = frame_counter - 1'b1;
+      frame = 1'b0;
+    end
+  end
+
+assign clk = frame;
+endmodule
 	 
    
 	 
-endmodule 
+//endmodule 
 	 

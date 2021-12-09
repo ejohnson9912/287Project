@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BattleBoard
-Thu Dec 09 14:42:26 2021
+Thu Dec 09 14:51:37 2021
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -110,16 +110,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 09 14:42:26 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 09 14:51:37 2021       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; BattleBoard                                 ;
 ; Top-level Entity Name              ; BattleBoard                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,838                                       ;
-;     Total combinational functions  ; 2,827                                       ;
-;     Dedicated logic registers      ; 563                                         ;
-; Total registers                    ; 563                                         ;
-; Total pins                         ; 154                                         ;
+; Total logic elements               ; 2,844                                       ;
+;     Total combinational functions  ; 2,832                                       ;
+;     Dedicated logic registers      ; 565                                         ;
+; Total registers                    ; 565                                         ;
+; Total pins                         ; 155                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 57,600                                      ;
 ; Embedded Multiplier 9-bit elements ; 6                                           ;
@@ -301,23 +301,23 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 2,838          ;
+; Estimated Total logic elements              ; 2,844          ;
 ;                                             ;                ;
-; Total combinational functions               ; 2827           ;
+; Total combinational functions               ; 2832           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 1518           ;
-;     -- 3 input functions                    ; 661            ;
-;     -- <=2 input functions                  ; 648            ;
+;     -- 4 input functions                    ; 1520           ;
+;     -- 3 input functions                    ; 663            ;
+;     -- <=2 input functions                  ; 649            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 2337           ;
+;     -- normal mode                          ; 2342           ;
 ;     -- arithmetic mode                      ; 490            ;
 ;                                             ;                ;
-; Total registers                             ; 563            ;
-;     -- Dedicated logic registers            ; 563            ;
+; Total registers                             ; 565            ;
+;     -- Dedicated logic registers            ; 565            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 154            ;
+; I/O pins                                    ; 155            ;
 ; Total memory bits                           ; 57600          ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 6              ;
@@ -327,7 +327,7 @@ agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 424            ;
-; Total fan-out                               ; 11296          ;
+; Total fan-out                               ; 11318          ;
 ; Average fan-out                             ; 3.03           ;
 +---------------------------------------------+----------------+
 
@@ -337,7 +337,7 @@ agreement for further details.
 +---------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                 ; Entity Name            ; Library Name ;
 +---------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |BattleBoard                                            ; 2827 (1261)         ; 563 (339)                 ; 57600       ; 6            ; 6       ; 0         ; 154  ; 0            ; |BattleBoard                                                                                                                                        ; BattleBoard            ; work         ;
+; |BattleBoard                                            ; 2832 (1264)         ; 565 (339)                 ; 57600       ; 6            ; 6       ; 0         ; 155  ; 0            ; |BattleBoard                                                                                                                                        ; BattleBoard            ; work         ;
 ;    |attack:p1Attack1|                                   ; 75 (34)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1                                                                                                                       ; attack                 ; work         ;
 ;       |lpm_divide:Div0|                                 ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
 ;          |lpm_divide_khm:auto_generated|                ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack1|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
@@ -354,7 +354,7 @@ agreement for further details.
 ;                   |add_sub_8pc:add_sub_1|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc            ; work         ;
 ;       |lpm_mult:Mult0|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_mult:Mult0                                                                                                        ; lpm_mult               ; work         ;
 ;          |mult_2at:auto_generated|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack2|lpm_mult:Mult0|mult_2at:auto_generated                                                                                ; mult_2at               ; work         ;
-;    |attack:p1Attack3|                                   ; 79 (38)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3                                                                                                                       ; attack                 ; work         ;
+;    |attack:p1Attack3|                                   ; 80 (39)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3                                                                                                                       ; attack                 ; work         ;
 ;       |lpm_divide:Div0|                                 ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
 ;          |lpm_divide_khm:auto_generated|                ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
 ;             |sign_div_unsign_ekh:divider|               ; 41 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p1Attack3|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider                                             ; sign_div_unsign_ekh    ; work         ;
@@ -371,11 +371,11 @@ agreement for further details.
 ;                   |add_sub_8pc:add_sub_1|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack1|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc            ; work         ;
 ;       |lpm_mult:Mult0|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack1|lpm_mult:Mult0                                                                                                        ; lpm_mult               ; work         ;
 ;          |mult_2at:auto_generated|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack1|lpm_mult:Mult0|mult_2at:auto_generated                                                                                ; mult_2at               ; work         ;
-;    |attack:p2Attack2|                                   ; 79 (35)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2                                                                                                                       ; attack                 ; work         ;
-;       |lpm_divide:Div0|                                 ; 44 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
-;          |lpm_divide_khm:auto_generated|                ; 44 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
-;             |sign_div_unsign_ekh:divider|               ; 44 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider                                             ; sign_div_unsign_ekh    ; work         ;
-;                |alt_u_div_94f:divider|                  ; 44 (43)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider                       ; alt_u_div_94f          ; work         ;
+;    |attack:p2Attack2|                                   ; 78 (35)             ; 10 (10)                   ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2                                                                                                                       ; attack                 ; work         ;
+;       |lpm_divide:Div0|                                 ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0                                                                                                       ; lpm_divide             ; work         ;
+;          |lpm_divide_khm:auto_generated|                ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated                                                                         ; lpm_divide_khm         ; work         ;
+;             |sign_div_unsign_ekh:divider|               ; 43 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider                                             ; sign_div_unsign_ekh    ; work         ;
+;                |alt_u_div_94f:divider|                  ; 43 (42)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider                       ; alt_u_div_94f          ; work         ;
 ;                   |add_sub_8pc:add_sub_1|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_divide:Div0|lpm_divide_khm:auto_generated|sign_div_unsign_ekh:divider|alt_u_div_94f:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc            ; work         ;
 ;       |lpm_mult:Mult0|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_mult:Mult0                                                                                                        ; lpm_mult               ; work         ;
 ;          |mult_2at:auto_generated|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 1            ; 1       ; 0         ; 0    ; 0            ; |BattleBoard|attack:p2Attack2|lpm_mult:Mult0|mult_2at:auto_generated                                                                                ; mult_2at               ; work         ;
@@ -436,14 +436,14 @@ agreement for further details.
 ;    |seven_segment:comb_5040|                            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|seven_segment:comb_5040                                                                                                                ; seven_segment          ; work         ;
 ;    |twoComp:xMoveA|                                     ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|twoComp:xMoveA                                                                                                                         ; twoComp                ; work         ;
 ;    |twoComp:yMoveA|                                     ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|twoComp:yMoveA                                                                                                                         ; twoComp                ; work         ;
-;    |vga_adapter:VGA|                                    ; 96 (2)              ; 28 (0)                    ; 57600       ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA                                                                                                                        ; vga_adapter            ; work         ;
+;    |vga_adapter:VGA|                                    ; 98 (2)              ; 30 (0)                    ; 57600       ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA                                                                                                                        ; vga_adapter            ; work         ;
 ;       |altsyncram:VideoMemory|                          ; 12 (0)              ; 4 (0)                     ; 57600       ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|altsyncram:VideoMemory                                                                                                 ; altsyncram             ; work         ;
 ;          |altsyncram_60g1:auto_generated|               ; 12 (0)              ; 4 (4)                     ; 57600       ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_60g1:auto_generated                                                                  ; altsyncram_60g1        ; work         ;
 ;             |decode_e8a:rden_decode_b|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_60g1:auto_generated|decode_e8a:rden_decode_b                                         ; decode_e8a             ; work         ;
 ;             |decode_lsa:decode2|                        ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_60g1:auto_generated|decode_lsa:decode2                                               ; decode_lsa             ; work         ;
 ;             |mux_0nb:mux3|                              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_60g1:auto_generated|mux_0nb:mux3                                                     ; mux_0nb                ; work         ;
 ;       |vga_address_translator:user_input_translator|    ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|vga_address_translator:user_input_translator                                                                           ; vga_address_translator ; work         ;
-;       |vga_controller:controller|                       ; 64 (46)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|vga_controller:controller                                                                                              ; vga_controller         ; work         ;
+;       |vga_controller:controller|                       ; 66 (48)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|vga_controller:controller                                                                                              ; vga_controller         ; work         ;
 ;          |vga_address_translator:controller_translator| ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|vga_controller:controller|vga_address_translator:controller_translator                                                 ; vga_address_translator ; work         ;
 ;       |vga_pll:mypll|                                   ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|vga_pll:mypll                                                                                                          ; vga_pll                ; work         ;
 ;          |altpll:altpll_component|                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BattleBoard|vga_adapter:VGA|vga_pll:mypll|altpll:altpll_component                                                                                  ; altpll                 ; work         ;
@@ -779,18 +779,20 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------+----------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                             ;
-+----------------------+-------------------------+----------------------------------------------------------------------------------------+
-; Register name        ; Reason for Removal      ; Registers Removed due to This Register                                                 ;
-+----------------------+-------------------------+----------------------------------------------------------------------------------------+
-; rand:random2|seed[0] ; Stuck at VCC            ; rand:random2|num[0], rand:random2|seed[3], rand:random2|seed[2], rand:random2|seed[1], ;
-;                      ; due to stuck port aload ; attack:p2Attack4|damage[5], attack:p2Attack4|damage[4], attack:p2Attack4|damage[3],    ;
-;                      ;                         ; attack:p2Attack4|damage[2], attack:p2Attack4|damage[1], attack:p2Attack4|damage[0]     ;
-; rand:random1|seed[0] ; Stuck at VCC            ; rand:random1|num[0], rand:random1|seed[3], rand:random1|seed[2], rand:random1|seed[1], ;
-;                      ; due to stuck port aload ; attack:p1Attack4|damage[5], attack:p1Attack4|damage[4], attack:p1Attack4|damage[3],    ;
-;                      ;                         ; attack:p1Attack4|damage[2], attack:p1Attack4|damage[1], attack:p1Attack4|damage[0]     ;
-+----------------------+-------------------------+----------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                               ;
++----------------------+---------------------------+----------------------------------------------------------------------------------------+
+; Register name        ; Reason for Removal        ; Registers Removed due to This Register                                                 ;
++----------------------+---------------------------+----------------------------------------------------------------------------------------+
+; rand:random2|seed[0] ; Stuck at VCC              ; rand:random2|num[0], rand:random2|seed[3], rand:random2|seed[2], rand:random2|seed[1], ;
+;                      ; due to stuck port aload   ; attack:p2Attack4|damage[5], attack:p2Attack4|damage[4], attack:p2Attack4|damage[3],    ;
+;                      ;                           ; attack:p2Attack4|damage[2], attack:p2Attack4|damage[1], attack:p2Attack4|damage[0]     ;
+; rand:random1|seed[0] ; Stuck at VCC              ; rand:random1|num[0], rand:random1|seed[3], rand:random1|seed[2], rand:random1|seed[1], ;
+;                      ; due to stuck port aload   ; attack:p1Attack4|damage[5], attack:p1Attack4|damage[4], attack:p1Attack4|damage[3],    ;
+;                      ;                           ; attack:p1Attack4|damage[2], attack:p1Attack4|damage[1], attack:p1Attack4|damage[0]     ;
+; colour[1]            ; Stuck at GND              ; string[79], string[87]                                                                 ;
+;                      ; due to stuck port data_in ;                                                                                        ;
++----------------------+---------------------------+----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -798,7 +800,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 563   ;
+; Total registers                              ; 565   ;
 ; Number of registers using Synchronous Clear  ; 60    ;
 ; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 133   ;
@@ -2081,16 +2083,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+---------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "vga_adapter:VGA"                                                                                                                                                                   ;
-+--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                                                                                                                          ;
-+--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; resetn ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                     ;
-; y      ; Input  ; Warning  ; Input port expression (8 bits) is wider than the input port (7 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; plot   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                     ;
-; VGA_VS ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
-+--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga_adapter:VGA"                                                                                                                                                                  ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                          ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; resetn ; Input ; Info     ; Stuck at VCC                                                                                                                                                                     ;
+; y      ; Input ; Warning  ; Input port expression (8 bits) is wider than the input port (7 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; plot   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                     ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -2309,8 +2310,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 154                         ;
-; cycloneiii_ff         ; 563                         ;
+; boundary_port         ; 155                         ;
+; cycloneiii_ff         ; 565                         ;
 ;     CLR               ; 37                          ;
 ;     ENA               ; 62                          ;
 ;     ENA CLR           ; 96                          ;
@@ -2319,24 +2320,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SLD           ; 3                           ;
 ;     SCLR              ; 26                          ;
 ;     SLD               ; 1                           ;
-;     plain             ; 304                         ;
-; cycloneiii_lcell_comb ; 2839                        ;
+;     plain             ; 306                         ;
+; cycloneiii_lcell_comb ; 2844                        ;
 ;     arith             ; 490                         ;
 ;         2 data inputs ; 183                         ;
 ;         3 data inputs ; 307                         ;
-;     normal            ; 2349                        ;
+;     normal            ; 2354                        ;
 ;         0 data inputs ; 74                          ;
 ;         1 data inputs ; 27                          ;
-;         2 data inputs ; 376                         ;
-;         3 data inputs ; 354                         ;
-;         4 data inputs ; 1518                        ;
+;         2 data inputs ; 377                         ;
+;         3 data inputs ; 356                         ;
+;         4 data inputs ; 1520                        ;
 ; cycloneiii_mac_mult   ; 6                           ;
 ; cycloneiii_mac_out    ; 6                           ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 9                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 18.20                       ;
-; Average LUT depth     ; 6.92                        ;
+; Average LUT depth     ; 6.91                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2355,7 +2356,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Dec 09 14:42:05 2021
+    Info: Processing started: Thu Dec 09 14:51:16 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BattleBoard -c BattleBoard
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2426,7 +2427,6 @@ Warning (10229): Verilog HDL Expression warning at distance.v(81): truncated lit
 Info (12021): Found 1 design units, including 1 entities, in source file output_files/distance.v
     Info (12023): Found entity 1: distance File: M:/ActualProject/287Project/output_files/distance.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(206): created implicit net for "check" File: M:/ActualProject/287Project/BattleBoard.v Line: 206
-Warning (10236): Verilog HDL Implicit Net warning at BattleBoard.v(1482): created implicit net for "VGA_VS" File: M:/ActualProject/287Project/BattleBoard.v Line: 1482
 Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1458): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1458
 Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1459): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1459
 Critical Warning (10846): Verilog HDL Instantiation warning at BattleBoard.v(1460): instance has no name File: M:/ActualProject/287Project/BattleBoard.v Line: 1460
@@ -2522,7 +2522,6 @@ Info (12133): Instantiated megafunction "vga_adapter:VGA|altsyncram:VideoMemory"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_60g1.tdf
     Info (12023): Found entity 1: altsyncram_60g1 File: M:/ActualProject/287Project/db/altsyncram_60g1.tdf Line: 34
 Info (12128): Elaborating entity "altsyncram_60g1" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_60g1:auto_generated" File: c:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Critical Warning (127003): Can't find Memory Initialization File or Hexadecimal (Intel-Format) File M:/ActualProject/287Project/black.mif -- setting all initial values to 0 File: M:/ActualProject/287Project/vga_adapter/vga_adapter.v Line: 213
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_lsa.tdf
     Info (12023): Found entity 1: decode_lsa File: M:/ActualProject/287Project/db/decode_lsa.tdf Line: 23
 Info (12128): Elaborating entity "decode_lsa" for hierarchy "vga_adapter:VGA|altsyncram:VideoMemory|altsyncram_60g1:auto_generated|decode_lsa:decode2" File: M:/ActualProject/287Project/db/altsyncram_60g1.tdf Line: 47
@@ -2790,18 +2789,18 @@ Warning (21074): Design contains 19 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[15]" File: M:/ActualProject/287Project/BattleBoard.v Line: 6
     Warning (15610): No output dependent on input pin "SW[16]" File: M:/ActualProject/287Project/BattleBoard.v Line: 6
     Warning (15610): No output dependent on input pin "SW[17]" File: M:/ActualProject/287Project/BattleBoard.v Line: 6
-Info (21057): Implemented 3056 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3063 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 25 input pins
-    Info (21059): Implemented 129 output pins
-    Info (21061): Implemented 2886 logic cells
+    Info (21059): Implemented 130 output pins
+    Info (21061): Implemented 2892 logic cells
     Info (21064): Implemented 9 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 6 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 215 warnings
-    Info: Peak virtual memory: 4802 megabytes
-    Info: Processing ended: Thu Dec 09 14:42:27 2021
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:29
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 213 warnings
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Thu Dec 09 14:51:37 2021
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:28
 
 
 +------------------------------------------+

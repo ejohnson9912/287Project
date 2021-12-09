@@ -236,6 +236,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
 					"name" : "VGA_R[0]",
 					"strict" : false
 				},

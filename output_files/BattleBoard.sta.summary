@@ -3,155 +3,155 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'updateA'
-Slack : -14.622
-TNS   : -456.009
+Slack : -14.666
+TNS   : -446.538
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -11.218
-TNS   : -695.172
+Slack : -10.226
+TNS   : -673.951
 
 Type  : Slow 1200mV 85C Model Setup 'point:pos1|x[0]'
-Slack : -9.076
-TNS   : -26.215
+Slack : -8.132
+TNS   : -24.253
 
 Type  : Slow 1200mV 85C Model Setup 'update'
-Slack : -7.437
-TNS   : -170.071
-
-Type  : Slow 1200mV 85C Model Setup 'p2ARst[1]'
-Slack : -3.105
-TNS   : -10.210
+Slack : -7.358
+TNS   : -177.072
 
 Type  : Slow 1200mV 85C Model Setup 'p1ARst[2]'
-Slack : -2.422
-TNS   : -10.459
-
-Type  : Slow 1200mV 85C Model Setup 'lcd:lcd_control|dispClock'
-Slack : -2.009
-TNS   : -13.184
-
-Type  : Slow 1200mV 85C Model Setup 'p2ARst[0]'
-Slack : -2.007
-TNS   : -7.571
-
-Type  : Slow 1200mV 85C Model Setup 'p1ARst[1]'
-Slack : -1.593
-TNS   : -5.499
-
-Type  : Slow 1200mV 85C Model Setup 'chRst2'
-Slack : -1.171
-TNS   : -4.143
-
-Type  : Slow 1200mV 85C Model Setup 'PS2_CLK'
-Slack : -1.099
-TNS   : -10.364
-
-Type  : Slow 1200mV 85C Model Setup 'chRst1'
-Slack : -0.807
-TNS   : -2.383
+Slack : -2.319
+TNS   : -11.232
 
 Type  : Slow 1200mV 85C Model Setup 'p1ARst[0]'
-Slack : -0.677
-TNS   : -2.422
+Slack : -1.912
+TNS   : -9.486
+
+Type  : Slow 1200mV 85C Model Setup 'lcd:lcd_control|dispClock'
+Slack : -1.553
+TNS   : -10.930
+
+Type  : Slow 1200mV 85C Model Setup 'p1ARst[1]'
+Slack : -1.519
+TNS   : -4.480
+
+Type  : Slow 1200mV 85C Model Setup 'PS2_CLK'
+Slack : -1.135
+TNS   : -12.387
+
+Type  : Slow 1200mV 85C Model Setup 'p2ARst[1]'
+Slack : -1.000
+TNS   : -3.464
+
+Type  : Slow 1200mV 85C Model Setup 'p2ARst[0]'
+Slack : -0.999
+TNS   : -3.988
 
 Type  : Slow 1200mV 85C Model Setup 'p2ARst[2]'
-Slack : -0.160
-TNS   : -0.420
+Slack : -0.779
+TNS   : -2.486
+
+Type  : Slow 1200mV 85C Model Setup 'chRst2'
+Slack : -0.389
+TNS   : -1.444
+
+Type  : Slow 1200mV 85C Model Setup 'chRst1'
+Slack : -0.364
+TNS   : -0.829
 
 Type  : Slow 1200mV 85C Model Setup 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 33.201
+Slack : 33.040
 TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'p2ARst[2]'
-Slack : -0.609
-TNS   : -2.300
-
-Type  : Slow 1200mV 85C Model Hold 'p1ARst[0]'
-Slack : -0.424
-TNS   : -0.796
-
-Type  : Slow 1200mV 85C Model Hold 'chRst1'
-Slack : -0.393
-TNS   : -0.420
-
-Type  : Slow 1200mV 85C Model Hold 'point:pos1|x[0]'
-Slack : -0.335
-TNS   : -0.629
-
-Type  : Slow 1200mV 85C Model Hold 'update'
-Slack : -0.287
-TNS   : -1.794
 
 Type  : Slow 1200mV 85C Model Hold 'updateA'
-Slack : -0.213
-TNS   : -0.274
+Slack : -0.629
+TNS   : -5.977
 
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.047
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'chRst1'
+Slack : -0.580
+TNS   : -1.976
 
-Type  : Slow 1200mV 85C Model Hold 'p2ARst[0]'
-Slack : 0.057
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Hold 'update'
+Slack : -0.324
+TNS   : -2.679
 
 Type  : Slow 1200mV 85C Model Hold 'chRst2'
-Slack : 0.094
+Slack : -0.238
+TNS   : -0.711
+
+Type  : Slow 1200mV 85C Model Hold 'p2ARst[2]'
+Slack : -0.034
+TNS   : -0.075
+
+Type  : Slow 1200mV 85C Model Hold 'p2ARst[0]'
+Slack : -0.029
+TNS   : -0.029
+
+Type  : Slow 1200mV 85C Model Hold 'point:pos1|x[0]'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'p1ARst[1]'
+Slack : 0.254
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'p2ARst[1]'
+Slack : 0.291
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.298
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 0.403
+Slack : 0.404
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'lcd:lcd_control|dispClock'
-Slack : 0.403
+Slack : 0.404
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'PS2_CLK'
 Slack : 0.440
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'p1ARst[1]'
-Slack : 0.512
+Type  : Slow 1200mV 85C Model Hold 'p1ARst[0]'
+Slack : 0.911
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'p1ARst[2]'
-Slack : 1.420
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'p2ARst[1]'
-Slack : 1.778
+Slack : 1.840
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'update'
-Slack : -2.167
-TNS   : -23.461
-
-Type  : Slow 1200mV 85C Model Recovery 'updateA'
-Slack : -0.915
-TNS   : -12.605
+Slack : -2.476
+TNS   : -25.946
 
 Type  : Slow 1200mV 85C Model Recovery 'lcd:lcd_control|dispClock'
-Slack : -0.268
-TNS   : -2.680
+Slack : -0.693
+TNS   : -5.733
+
+Type  : Slow 1200mV 85C Model Recovery 'updateA'
+Slack : -0.080
+TNS   : -0.800
 
 Type  : Slow 1200mV 85C Model Recovery 'CLOCK_50'
-Slack : 15.328
+Slack : 14.989
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'updateA'
-Slack : -2.548
-TNS   : -69.059
+Slack : -2.432
+TNS   : -64.211
 
 Type  : Slow 1200mV 85C Model Removal 'update'
-Slack : -0.883
-TNS   : -13.295
+Slack : -0.580
+TNS   : -7.333
 
 Type  : Slow 1200mV 85C Model Removal 'lcd:lcd_control|dispClock'
-Slack : 0.634
+Slack : 0.931
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'CLOCK_50'
-Slack : 3.958
+Slack : 4.228
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PS2_CLK'
@@ -159,8 +159,8 @@ Slack : -3.000
 TNS   : -22.275
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'point:pos1|x[0]'
-Slack : -2.315
-TNS   : -108.289
+Slack : -1.917
+TNS   : -102.045
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'updateA'
 Slack : -1.285
@@ -174,196 +174,196 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lcd:lcd_control|dispClock'
 Slack : -1.285
 TNS   : -12.850
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'chRst1'
-Slack : 0.320
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1ARst[0]'
-Slack : 0.421
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'chRst2'
-Slack : 0.426
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p2ARst[0]'
-Slack : 0.434
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p2ARst[1]'
-Slack : 0.450
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1ARst[2]'
-Slack : 0.456
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1ARst[1]'
-Slack : 0.459
+Slack : 0.433
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p2ARst[2]'
-Slack : 0.478
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'chRst1'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p2ARst[0]'
+Slack : 0.467
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1ARst[1]'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1ARst[2]'
+Slack : 0.476
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'chRst2'
+Slack : 0.479
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.554
+Slack : 9.555
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 19.707
+Slack : 19.708
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'updateA'
-Slack : -13.047
-TNS   : -406.527
+Slack : -13.112
+TNS   : -398.859
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -10.152
-TNS   : -627.325
+Slack : -9.243
+TNS   : -607.458
 
 Type  : Slow 1200mV 0C Model Setup 'point:pos1|x[0]'
-Slack : -8.632
-TNS   : -24.973
+Slack : -7.699
+TNS   : -23.039
 
 Type  : Slow 1200mV 0C Model Setup 'update'
-Slack : -6.728
-TNS   : -151.827
-
-Type  : Slow 1200mV 0C Model Setup 'p2ARst[1]'
-Slack : -2.883
-TNS   : -9.362
+Slack : -6.650
+TNS   : -158.548
 
 Type  : Slow 1200mV 0C Model Setup 'p1ARst[2]'
-Slack : -2.235
-TNS   : -9.617
-
-Type  : Slow 1200mV 0C Model Setup 'p2ARst[0]'
-Slack : -1.894
-TNS   : -7.085
-
-Type  : Slow 1200mV 0C Model Setup 'lcd:lcd_control|dispClock'
-Slack : -1.748
-TNS   : -11.100
-
-Type  : Slow 1200mV 0C Model Setup 'p1ARst[1]'
-Slack : -1.468
-TNS   : -5.118
-
-Type  : Slow 1200mV 0C Model Setup 'chRst2'
-Slack : -1.104
-TNS   : -4.077
-
-Type  : Slow 1200mV 0C Model Setup 'PS2_CLK'
-Slack : -0.914
-TNS   : -7.971
-
-Type  : Slow 1200mV 0C Model Setup 'chRst1'
-Slack : -0.756
-TNS   : -2.386
+Slack : -2.128
+TNS   : -10.331
 
 Type  : Slow 1200mV 0C Model Setup 'p1ARst[0]'
-Slack : -0.660
-TNS   : -2.441
+Slack : -1.827
+TNS   : -8.889
+
+Type  : Slow 1200mV 0C Model Setup 'p1ARst[1]'
+Slack : -1.425
+TNS   : -4.197
+
+Type  : Slow 1200mV 0C Model Setup 'lcd:lcd_control|dispClock'
+Slack : -1.278
+TNS   : -8.973
+
+Type  : Slow 1200mV 0C Model Setup 'PS2_CLK'
+Slack : -0.939
+TNS   : -9.921
+
+Type  : Slow 1200mV 0C Model Setup 'p2ARst[0]'
+Slack : -0.930
+TNS   : -3.831
+
+Type  : Slow 1200mV 0C Model Setup 'p2ARst[1]'
+Slack : -0.907
+TNS   : -3.181
 
 Type  : Slow 1200mV 0C Model Setup 'p2ARst[2]'
-Slack : -0.211
-TNS   : -0.726
+Slack : -0.724
+TNS   : -2.405
+
+Type  : Slow 1200mV 0C Model Setup 'chRst2'
+Slack : -0.392
+TNS   : -1.537
+
+Type  : Slow 1200mV 0C Model Setup 'chRst1'
+Slack : -0.377
+TNS   : -0.870
 
 Type  : Slow 1200mV 0C Model Setup 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 33.847
+Slack : 33.657
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'p2ARst[2]'
-Slack : -0.431
-TNS   : -1.524
-
-Type  : Slow 1200mV 0C Model Hold 'update'
-Slack : -0.331
-TNS   : -2.298
-
 Type  : Slow 1200mV 0C Model Hold 'updateA'
-Slack : -0.275
-TNS   : -0.683
-
-Type  : Slow 1200mV 0C Model Hold 'p1ARst[0]'
-Slack : -0.255
-TNS   : -0.470
+Slack : -0.628
+TNS   : -6.998
 
 Type  : Slow 1200mV 0C Model Hold 'chRst1'
-Slack : -0.208
-TNS   : -0.208
+Slack : -0.414
+TNS   : -1.179
 
-Type  : Slow 1200mV 0C Model Hold 'point:pos1|x[0]'
-Slack : -0.118
-TNS   : -0.172
+Type  : Slow 1200mV 0C Model Hold 'update'
+Slack : -0.356
+TNS   : -3.098
 
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.094
+Type  : Slow 1200mV 0C Model Hold 'chRst2'
+Slack : -0.082
+TNS   : -0.160
+
+Type  : Slow 1200mV 0C Model Hold 'p2ARst[2]'
+Slack : 0.071
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'p2ARst[0]'
-Slack : 0.186
+Slack : 0.089
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'chRst2'
-Slack : 0.232
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 0.355
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.265
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'lcd:lcd_control|dispClock'
 Slack : 0.355
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Hold 'VGA|mypll|altpll_component|pll|clk[0]'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'p2ARst[1]'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'point:pos1|x[0]'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'p1ARst[1]'
+Slack : 0.381
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Hold 'PS2_CLK'
 Slack : 0.387
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'p1ARst[1]'
-Slack : 0.556
+Type  : Slow 1200mV 0C Model Hold 'p1ARst[0]'
+Slack : 0.979
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'p1ARst[2]'
-Slack : 1.383
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'p2ARst[1]'
-Slack : 1.737
+Slack : 1.809
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'update'
-Slack : -1.835
-TNS   : -19.857
-
-Type  : Slow 1200mV 0C Model Recovery 'updateA'
-Slack : -0.671
-TNS   : -9.122
+Slack : -2.108
+TNS   : -22.174
 
 Type  : Slow 1200mV 0C Model Recovery 'lcd:lcd_control|dispClock'
-Slack : -0.153
-TNS   : -1.530
+Slack : -0.544
+TNS   : -4.396
+
+Type  : Slow 1200mV 0C Model Recovery 'updateA'
+Slack : 0.068
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'CLOCK_50'
-Slack : 15.743
+Slack : 15.514
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'updateA'
-Slack : -2.405
-TNS   : -65.423
+Slack : -2.267
+TNS   : -59.782
 
 Type  : Slow 1200mV 0C Model Removal 'update'
-Slack : -0.848
-TNS   : -12.910
+Slack : -0.551
+TNS   : -6.991
 
 Type  : Slow 1200mV 0C Model Removal 'lcd:lcd_control|dispClock'
-Slack : 0.580
+Slack : 0.862
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'CLOCK_50'
-Slack : 3.586
+Slack : 3.908
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PS2_CLK'
@@ -371,8 +371,8 @@ Slack : -3.000
 TNS   : -22.275
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'point:pos1|x[0]'
-Slack : -2.220
-TNS   : -94.958
+Slack : -1.745
+TNS   : -87.500
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'updateA'
 Slack : -1.285
@@ -386,35 +386,35 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lcd:lcd_control|dispClock'
 Slack : -1.285
 TNS   : -12.850
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p2ARst[2]'
-Slack : 0.331
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1ARst[1]'
-Slack : 0.402
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p2ARst[1]'
+Slack : 0.356
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'chRst2'
-Slack : 0.409
+Slack : 0.363
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1ARst[2]'
-Slack : 0.410
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1ARst[0]'
-Slack : 0.415
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p2ARst[0]'
-Slack : 0.430
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1ARst[1]'
+Slack : 0.368
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'chRst1'
-Slack : 0.448
+Slack : 0.369
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p2ARst[1]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p2ARst[2]'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p2ARst[0]'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1ARst[2]'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1ARst[0]'
 Slack : 0.461
 TNS   : 0.000
 
@@ -423,168 +423,164 @@ Slack : 9.559
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 19.710
+Slack : 19.708
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'updateA'
-Slack : -6.506
-TNS   : -196.268
+Slack : -6.623
+TNS   : -193.061
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -5.627
-TNS   : -356.081
+Slack : -4.974
+TNS   : -340.763
 
 Type  : Fast 1200mV 0C Model Setup 'point:pos1|x[0]'
-Slack : -4.499
-TNS   : -12.831
+Slack : -4.069
+TNS   : -11.914
 
 Type  : Fast 1200mV 0C Model Setup 'update'
-Slack : -3.616
-TNS   : -78.105
-
-Type  : Fast 1200mV 0C Model Setup 'p2ARst[1]'
-Slack : -1.263
-TNS   : -3.815
+Slack : -3.677
+TNS   : -81.690
 
 Type  : Fast 1200mV 0C Model Setup 'p1ARst[2]'
-Slack : -0.856
-TNS   : -3.450
-
-Type  : Fast 1200mV 0C Model Setup 'p2ARst[0]'
-Slack : -0.613
-TNS   : -1.517
-
-Type  : Fast 1200mV 0C Model Setup 'lcd:lcd_control|dispClock'
-Slack : -0.405
-TNS   : -1.914
-
-Type  : Fast 1200mV 0C Model Setup 'p1ARst[1]'
-Slack : -0.327
-TNS   : -1.000
-
-Type  : Fast 1200mV 0C Model Setup 'chRst2'
-Slack : -0.188
-TNS   : -0.393
-
-Type  : Fast 1200mV 0C Model Setup 'PS2_CLK'
-Slack : -0.016
-TNS   : -0.016
-
-Type  : Fast 1200mV 0C Model Setup 'chRst1'
-Slack : 0.033
-TNS   : 0.000
+Slack : -0.822
+TNS   : -3.941
 
 Type  : Fast 1200mV 0C Model Setup 'p1ARst[0]'
-Slack : 0.124
-TNS   : 0.000
+Slack : -0.588
+TNS   : -2.460
+
+Type  : Fast 1200mV 0C Model Setup 'p1ARst[1]'
+Slack : -0.381
+TNS   : -0.796
+
+Type  : Fast 1200mV 0C Model Setup 'lcd:lcd_control|dispClock'
+Slack : -0.240
+TNS   : -0.892
+
+Type  : Fast 1200mV 0C Model Setup 'PS2_CLK'
+Slack : -0.076
+TNS   : -0.248
+
+Type  : Fast 1200mV 0C Model Setup 'p2ARst[1]'
+Slack : -0.065
+TNS   : -0.117
+
+Type  : Fast 1200mV 0C Model Setup 'p2ARst[0]'
+Slack : -0.047
+TNS   : -0.081
 
 Type  : Fast 1200mV 0C Model Setup 'p2ARst[2]'
-Slack : 0.460
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'chRst2'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'chRst1'
+Slack : 0.350
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 36.698
+Slack : 36.557
 TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'p2ARst[2]'
-Slack : -0.462
-TNS   : -1.968
-
-Type  : Fast 1200mV 0C Model Hold 'point:pos1|x[0]'
-Slack : -0.305
-TNS   : -0.744
-
-Type  : Fast 1200mV 0C Model Hold 'p1ARst[0]'
-Slack : -0.293
-TNS   : -0.628
-
-Type  : Fast 1200mV 0C Model Hold 'update'
-Slack : -0.255
-TNS   : -2.402
 
 Type  : Fast 1200mV 0C Model Hold 'chRst1'
-Slack : -0.251
-TNS   : -0.306
+Slack : -0.372
+TNS   : -1.459
 
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : -0.128
-TNS   : -0.128
-
-Type  : Fast 1200mV 0C Model Hold 'chRst2'
-Slack : -0.004
-TNS   : -0.004
-
-Type  : Fast 1200mV 0C Model Hold 'p2ARst[0]'
-Slack : 0.033
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Hold 'update'
+Slack : -0.303
+TNS   : -3.522
 
 Type  : Fast 1200mV 0C Model Hold 'updateA'
-Slack : 0.126
+Slack : -0.202
+TNS   : -1.509
+
+Type  : Fast 1200mV 0C Model Hold 'chRst2'
+Slack : -0.188
+TNS   : -0.732
+
+Type  : Fast 1200mV 0C Model Hold 'p2ARst[0]'
+Slack : -0.118
+TNS   : -0.166
+
+Type  : Fast 1200mV 0C Model Hold 'p2ARst[2]'
+Slack : -0.102
+TNS   : -0.348
+
+Type  : Fast 1200mV 0C Model Hold 'point:pos1|x[0]'
+Slack : -0.087
+TNS   : -0.087
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.009
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'p1ARst[1]'
+Slack : 0.119
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'p2ARst[1]'
+Slack : 0.157
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'lcd:lcd_control|dispClock'
-Slack : 0.182
+Slack : 0.183
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 0.183
+Slack : 0.184
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'PS2_CLK'
 Slack : 0.199
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'p1ARst[1]'
-Slack : 0.226
+Type  : Fast 1200mV 0C Model Hold 'p1ARst[0]'
+Slack : 0.484
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'p1ARst[2]'
-Slack : 0.781
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'p2ARst[1]'
-Slack : 0.976
+Slack : 0.998
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'update'
-Slack : -0.662
-TNS   : -7.076
+Slack : -0.818
+TNS   : -8.209
 
 Type  : Fast 1200mV 0C Model Recovery 'updateA'
-Slack : -0.496
-TNS   : -4.952
+Slack : -0.039
+TNS   : -0.383
 
 Type  : Fast 1200mV 0C Model Recovery 'lcd:lcd_control|dispClock'
-Slack : 0.397
+Slack : 0.179
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'CLOCK_50'
-Slack : 17.458
+Slack : 17.320
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'updateA'
-Slack : -1.249
-TNS   : -34.204
+Slack : -1.203
+TNS   : -31.413
 
 Type  : Fast 1200mV 0C Model Removal 'update'
-Slack : -0.406
-TNS   : -6.487
+Slack : -0.302
+TNS   : -4.090
 
 Type  : Fast 1200mV 0C Model Removal 'lcd:lcd_control|dispClock'
-Slack : 0.251
+Slack : 0.403
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'CLOCK_50'
-Slack : 1.915
+Slack : 2.055
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PS2_CLK'
 Slack : -3.000
-TNS   : -28.469
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'point:pos1|x[0]'
-Slack : -1.189
-TNS   : -31.833
+TNS   : -28.465
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'updateA'
 Slack : -1.000
@@ -598,36 +594,40 @@ Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lcd:lcd_control|dispClock'
 Slack : -1.000
 TNS   : -10.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p2ARst[2]'
-Slack : 0.206
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'point:pos1|x[0]'
+Slack : -0.896
+TNS   : -25.003
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'chRst1'
-Slack : 0.240
+Slack : 0.235
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1ARst[0]'
-Slack : 0.250
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'chRst2'
-Slack : 0.254
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p2ARst[2]'
+Slack : 0.263
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p2ARst[0]'
-Slack : 0.318
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'chRst2'
+Slack : 0.274
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1ARst[1]'
-Slack : 0.319
+Slack : 0.318
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1ARst[2]'
-Slack : 0.413
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1ARst[0]'
+Slack : 0.338
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p2ARst[1]'
-Slack : 0.425
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1ARst[2]'
+Slack : 0.427
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
@@ -635,7 +635,7 @@ Slack : 9.201
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'VGA|mypll|altpll_component|pll|clk[0]'
-Slack : 19.754
+Slack : 19.755
 TNS   : 0.000
 
 ------------------------------------------------------------

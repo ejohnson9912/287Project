@@ -15,7 +15,7 @@ module BattleBoard(
 	 
 	 output reg [6:0]HEX7, output [6:0]HEX6, output [6:0]HEX5, output [6:0]HEX4,
 	 
-	 output VGA_CLK, output VGA_HS, output VGA_BLANK_N, output VGA_SYNC_N,
+	 output VGA_CLK, output VGA_HS, output VGA_BLANK_N, output VGA_SYNC_N, output VGA_VS,
 	
 	 output [9:0]VGA_R, output [9:0]VGA_G, output [9:0]VGA_B
 	 

@@ -33,11 +33,11 @@ module point(
 	 always @(posedge update or posedge rst) begin 
 	      if (rst == 1'b1) begin 
 			    if (i == 0) begin
-				     x <= 5'd2;
-					  y <= 5'd2;
+				     x <= 3'd2;
+					  y <= 3'd4;
 				 end else begin
-				     x <= 5'd6;
-					  y <= 5'd6;
+				     x <= 3'd4;
+					  y <= 3'd2;
 				 end 
 			end else begin  
 	          if (en == 1'b1) begin
@@ -55,7 +55,7 @@ module point(
 								end 
 							end 2'b10: begin
 							   if (x < xReal) begin 
-								    x <= 0;
+								    x <= 1;
 							   end else begin
 								    x <= x - xReal;
 								end 
@@ -71,18 +71,18 @@ module point(
 								    x <= x + xReal;
 								end 
 							   if (y < yReal) begin 
-								    y <= 0;
+								    y <= 1;
 							   end else begin
 								    y <= y - yReal;
 								end 
 							end 2'b11: begin 
 							   if  (x < xReal) begin 
-								    x <= 0;
+								    x <= 1;
 							   end else begin
 								    x <= x - xReal;
 								end
 							   if (y < yReal) begin 
-								    y <= 0;
+								    y <= 1;
 							   end else begin
 								    y <= y - yReal;
 									 

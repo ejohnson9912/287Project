@@ -1,13 +1,12 @@
 module rand(
-    input clk,
-	 input en,
+    input update,
 	 input rst,
 	 input [4:0]dodge,
 	 output reg [4:0]num);
 	 
 	 reg [4:0] seed;
 	 
-	 always @(posedge clk or negedge rst) begin
+	 always @(posedge update or negedge rst) begin
 	     if (rst == 1'b0) begin
 		      num <= seed;
 				seed <= dodge;

@@ -2,40 +2,388 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -2.509
-TNS   : -21.959
+Type  : Slow 1200mV 85C Model Setup 'updateA'
+Slack : -17.511
+TNS   : -709.524
 
-Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 1.349
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -7.671
+TNS   : -1031.216
+
+Type  : Slow 1200mV 85C Model Setup 'update'
+Slack : -6.276
+TNS   : -64.240
+
+Type  : Slow 1200mV 85C Model Setup 'chRst2'
+Slack : -2.245
+TNS   : -24.780
+
+Type  : Slow 1200mV 85C Model Setup 'p1ARst[0]'
+Slack : -2.022
+TNS   : -18.603
+
+Type  : Slow 1200mV 85C Model Setup 'lcd:lcd_control|dispClock'
+Slack : -1.520
+TNS   : -11.087
+
+Type  : Slow 1200mV 85C Model Setup 'PS2_CLK'
+Slack : -1.050
+TNS   : -11.038
+
+Type  : Slow 1200mV 85C Model Setup 'chRst1'
+Slack : -0.787
+TNS   : -2.880
+
+Type  : Slow 1200mV 85C Model Hold 'updateA'
+Slack : -0.526
+TNS   : -4.144
+
+Type  : Slow 1200mV 85C Model Hold 'update'
+Slack : -0.114
+TNS   : -0.160
+
+Type  : Slow 1200mV 85C Model Hold 'chRst1'
+Slack : -0.050
+TNS   : -0.050
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.384
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
-Slack : -3.000
-TNS   : -15.850
-
-Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -2.178
-TNS   : -18.952
-
-Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 1.225
+Type  : Slow 1200mV 85C Model Hold 'lcd:lcd_control|dispClock'
+Slack : 0.405
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : -3.000
-TNS   : -15.850
-
-Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.659
-TNS   : -5.216
-
-Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.598
+Type  : Slow 1200mV 85C Model Hold 'PS2_CLK'
+Slack : 0.440
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Type  : Slow 1200mV 85C Model Hold 'chRst2'
+Slack : 0.872
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'p1ARst[0]'
+Slack : 1.049
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLOCK_50'
+Slack : -0.926
+TNS   : -15.656
+
+Type  : Slow 1200mV 85C Model Recovery 'lcd:lcd_control|dispClock'
+Slack : -0.270
+TNS   : -2.160
+
+Type  : Slow 1200mV 85C Model Recovery 'update'
+Slack : -0.067
+TNS   : -0.162
+
+Type  : Slow 1200mV 85C Model Recovery 'updateA'
+Slack : 1.228
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'updateA'
+Slack : -1.719
+TNS   : -126.032
+
+Type  : Slow 1200mV 85C Model Removal 'update'
+Slack : -1.007
+TNS   : -8.053
+
+Type  : Slow 1200mV 85C Model Removal 'lcd:lcd_control|dispClock'
+Slack : -0.150
+TNS   : -0.150
+
+Type  : Slow 1200mV 85C Model Removal 'CLOCK_50'
+Slack : 1.001
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -3.000
-TNS   : -14.680
+TNS   : -343.525
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -3.000
+TNS   : -22.275
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'updateA'
+Slack : -1.285
+TNS   : -102.800
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'update'
+Slack : -1.285
+TNS   : -17.990
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lcd:lcd_control|dispClock'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'chRst2'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1ARst[0]'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'chRst1'
+Slack : 0.474
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'updateA'
+Slack : -15.719
+TNS   : -638.791
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -6.934
+TNS   : -926.956
+
+Type  : Slow 1200mV 0C Model Setup 'update'
+Slack : -5.647
+TNS   : -57.594
+
+Type  : Slow 1200mV 0C Model Setup 'chRst2'
+Slack : -2.081
+TNS   : -22.803
+
+Type  : Slow 1200mV 0C Model Setup 'p1ARst[0]'
+Slack : -1.922
+TNS   : -17.538
+
+Type  : Slow 1200mV 0C Model Setup 'lcd:lcd_control|dispClock'
+Slack : -1.283
+TNS   : -9.240
+
+Type  : Slow 1200mV 0C Model Setup 'PS2_CLK'
+Slack : -0.863
+TNS   : -8.526
+
+Type  : Slow 1200mV 0C Model Setup 'chRst1'
+Slack : -0.765
+TNS   : -2.825
+
+Type  : Slow 1200mV 0C Model Hold 'updateA'
+Slack : -0.536
+TNS   : -5.331
+
+Type  : Slow 1200mV 0C Model Hold 'update'
+Slack : -0.147
+TNS   : -0.280
+
+Type  : Slow 1200mV 0C Model Hold 'chRst1'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lcd:lcd_control|dispClock'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PS2_CLK'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'chRst2'
+Slack : 0.903
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'p1ARst[0]'
+Slack : 1.052
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : -0.723
+TNS   : -11.198
+
+Type  : Slow 1200mV 0C Model Recovery 'lcd:lcd_control|dispClock'
+Slack : -0.128
+TNS   : -1.024
+
+Type  : Slow 1200mV 0C Model Recovery 'update'
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'updateA'
+Slack : 1.265
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'updateA'
+Slack : -1.619
+TNS   : -118.905
+
+Type  : Slow 1200mV 0C Model Removal 'update'
+Slack : -0.952
+TNS   : -7.609
+
+Type  : Slow 1200mV 0C Model Removal 'lcd:lcd_control|dispClock'
+Slack : -0.152
+TNS   : -0.152
+
+Type  : Slow 1200mV 0C Model Removal 'CLOCK_50'
+Slack : 0.907
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -343.525
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -3.000
+TNS   : -22.275
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'updateA'
+Slack : -1.285
+TNS   : -102.800
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'update'
+Slack : -1.285
+TNS   : -17.990
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lcd:lcd_control|dispClock'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'chRst1'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1ARst[0]'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'chRst2'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'updateA'
+Slack : -8.045
+TNS   : -313.611
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -3.340
+TNS   : -419.664
+
+Type  : Fast 1200mV 0C Model Setup 'update'
+Slack : -2.976
+TNS   : -27.555
+
+Type  : Fast 1200mV 0C Model Setup 'chRst2'
+Slack : -0.828
+TNS   : -7.277
+
+Type  : Fast 1200mV 0C Model Setup 'p1ARst[0]'
+Slack : -0.650
+TNS   : -5.169
+
+Type  : Fast 1200mV 0C Model Setup 'lcd:lcd_control|dispClock'
+Slack : -0.216
+TNS   : -0.782
+
+Type  : Fast 1200mV 0C Model Setup 'PS2_CLK'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'chRst1'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'updateA'
+Slack : -0.140
+TNS   : -0.678
+
+Type  : Fast 1200mV 0C Model Hold 'chRst1'
+Slack : -0.068
+TNS   : -0.163
+
+Type  : Fast 1200mV 0C Model Hold 'update'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.079
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lcd:lcd_control|dispClock'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PS2_CLK'
+Slack : 0.199
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'chRst2'
+Slack : 0.474
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'p1ARst[0]'
+Slack : 0.541
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : 0.034
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'lcd:lcd_control|dispClock'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'update'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'updateA'
+Slack : 0.746
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'updateA'
+Slack : -0.859
+TNS   : -63.383
+
+Type  : Fast 1200mV 0C Model Removal 'update'
+Slack : -0.503
+TNS   : -4.022
+
+Type  : Fast 1200mV 0C Model Removal 'lcd:lcd_control|dispClock'
+Slack : -0.107
+TNS   : -0.132
+
+Type  : Fast 1200mV 0C Model Removal 'CLOCK_50'
+Slack : 0.475
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -345.536
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PS2_CLK'
+Slack : -3.000
+TNS   : -28.353
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'updateA'
+Slack : -1.000
+TNS   : -80.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'update'
+Slack : -1.000
+TNS   : -14.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lcd:lcd_control|dispClock'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'chRst1'
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1ARst[0]'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'chRst2'
+Slack : 0.335
+TNS   : 0.000
 
 ------------------------------------------------------------

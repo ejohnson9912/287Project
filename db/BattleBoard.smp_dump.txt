@@ -1,0 +1,37 @@
+
+State Machine - |BattleBoard|S
+Name S.endGame S.p2DamageD S.p2Aim S.p2AimI S.p2Attack S.p2AInst S.p2Move S.p2MInst S.p1DamageD S.p1Aim S.p1AimI S.p1Attack S.p1AInst S.p1Move S.p1MInst S.p2Pick S.p2PInst S.p1Pick S.p1PInst S.prog S.start 
+S.start 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+S.prog 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+S.p1PInst 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+S.p1Pick 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+S.p2PInst 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+S.p2Pick 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+S.p1MInst 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+S.p1Move 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+S.p1AInst 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+S.p1Attack 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+S.p1AimI 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+S.p1Aim 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+S.p1DamageD 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+S.p2MInst 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.p2Move 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.p2AInst 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.p2Attack 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.p2AimI 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.p2Aim 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.p2DamageD 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+S.endGame 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |BattleBoard|lcd:lcd_control|state
+Name state.IDLE_STATE state.PUSH_STATE state.LOAD_STATE state.INIT_STATE 
+state.INIT_STATE 0 0 0 0 
+state.LOAD_STATE 0 0 1 1 
+state.PUSH_STATE 0 1 0 1 
+state.IDLE_STATE 1 0 0 1 
+
+State Machine - |BattleBoard|keyboard:key_control|S
+Name S.startBit S.update S.getData 
+S.startBit 0 0 0 
+S.getData 1 0 1 
+S.update 1 1 0 

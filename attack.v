@@ -1,22 +1,121 @@
 module attack(
-       input clk,
-		 input en,
+       input update,
+		 input en, 
 		 input rst, 
-		 input [2:0]i, 
-		 input [2:0]j,
+		 input [1:0]i, 
+		 input [1:0]j,
 		 input [4:0]dodge,
 		 input [4:0]aim,
-		 output [4:0]spread,
-		 output [4:0]range,
+		 output reg [4:0]spread,
+		 output reg [4:0]range,
 		 output reg [3:0]load,
 		 output reg [5:0]damage);
 		 
 		 
 		 reg [4:0]gap;
-		 wire [5:0]maxDamage = 6'd36;
-		 wire [3:0]clip = 4'd15;
+		 reg [5:0]maxDamage;
+		 reg [3:0]clip;
 		 
-		 assign spread = 4'd9;
+		 always @(*) begin
+		       case ({i, j}) 
+						 4'd0: begin
+							 maxDamage <= 42;
+							 spread <= 7;
+							 range <= 3;
+							 clip <= 2;
+						 end
+					    4'd1: begin
+							  maxDamage <= 50;
+						     spread <= 5;
+							  range <= 2;
+							  clip <= 2;
+						 end
+						 4'd2: begin
+							  maxDamage <= 18;
+						  	  spread <= 3;
+							  range <= 5;
+							  clip <= 1;
+						 end
+						 4'd3: begin
+							  maxDamage <= 30;
+						  	  spread <= 3;
+							  range <= 2;
+							  clip <= 2;
+						 end
+						 4'd4: begin
+							  maxDamage <= 35;
+						  	  spread <= 5;
+							  range <= 4;
+							  clip <= 2;
+						 end
+				       4'd5: begin
+							  maxDamage <= 28;
+							  spread <= 7;
+							  range <= 6;
+							  clip <= 2;
+						 end
+			          4'd6: begin
+							  maxDamage <= 27;
+							  spread <= 9;
+							  range <= 5;
+							  clip <= 2;
+						 end
+						 4'd7: begin
+							  maxDamage <= 25;
+							  spread <= 5;
+							  range <= 2;
+							  clip <= 1;
+						 end 
+						 4'd8: begin
+							  maxDamage <= 25;
+							  spread <= 5;
+							  range <= 3;
+							  clip <= 2;
+						 end
+				       4'd9: begin
+							  maxDamage <= 35;
+							  spread <= 5;
+							  range <= 3;
+							  clip <= 2;
+						 end
+			          4'd10: begin
+							  maxDamage <= 18;
+							 spread <= 9;
+							 range <= 3; 
+							 clip <= 2;
+                   end
+						 4'd11: begin
+							  maxDamage <= 42;
+							 spread <= 3;
+							 range <= 3;
+							 clip <= 3;
+						 end
+						 4'd12: begin
+							  maxDamage <= 28;
+							 spread <= 5;
+							 range <= 1;
+							 clip <= 3;
+						 end
+				       4'd13: begin
+							  maxDamage <= 35;
+							 spread <= 7;
+							 range <= 3;
+							 clip <= 2;
+						 end
+			          4'd14: begin
+							 maxDamage <= 28;
+							 spread <= 5;
+							 range <= 4;
+							 clip <= 1;
+						 end
+						 4'd15: begin
+						    maxDamage <= 45;
+							 spread <= 5;
+							 range <= 2;
+							 clip <= 5;
+				       end		 
+					endcase 
+		 end
 		 
 		
 			     
@@ -29,13 +128,13 @@ module attack(
 		 end 
 		 
 		 
-		 always @(posedge clk or negedge rst) begin
-		      if (rst == 1'b0) begin 
+		 always @(posedge update or posedge rst) begin
+		      if (rst == 1'b1) begin 
 			       load <= clip;
-				    damage <= 6'b0;
+				    damage <= maxDamage;
 			   end else begin 
-			       
-		          if (en == 1'b1) begin
+			      if (en == 1'b1) begin
+		             
 				       if (spread <= gap | load == 4'b0) begin
 				   	     damage <= 6'b0;
 				    	 end else if (gap == 5'd0) begin
@@ -44,11 +143,12 @@ module attack(
  				    	     damage <= (((spread - gap) * maxDamage) / gap);
 					    end	
 						 if (load == 4'b0) begin 
-						     load = 4'b0;
+						     load <= 4'b0;
 					    end else begin 
 						     load <= load - 4'b1;
-						 end 
-				    end
-	         end
+						 end
+					end 
+				end
+	         
 	     end  
 endmodule 

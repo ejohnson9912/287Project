@@ -10,19 +10,15 @@ S.p2Move 0 0 1 0 0 0 0 1
 S.p2Attack 0 1 0 0 0 0 0 1 
 S.p2Aim 1 0 0 0 0 0 0 1 
 
-State Machine - |lcd|NS
-Name NS.p2Aim NS.p2Attack NS.p2Move NS.p1Aim NS.p1Attack NS.p1Move NS.start 
-NS.start 0 0 0 0 0 0 0 
-NS.p1Move 0 0 0 0 0 1 1 
-NS.p1Attack 0 0 0 0 1 0 1 
-NS.p1Aim 0 0 0 1 0 0 1 
-NS.p2Move 0 0 1 0 0 0 1 
-NS.p2Attack 0 1 0 0 0 0 1 
-NS.p2Aim 1 0 0 0 0 0 1 
-
 State Machine - |lcd|lcd_control:lcd|state
 Name state.IDLE_STATE state.PUSH_STATE state.LOAD_STATE state.INIT_STATE 
 state.INIT_STATE 0 0 0 0 
 state.LOAD_STATE 0 0 1 1 
 state.PUSH_STATE 0 1 0 1 
 state.IDLE_STATE 1 0 0 1 
+
+State Machine - |lcd|keyboard:kb|S
+Name S.startBit S.update S.getData 
+S.startBit 0 0 0 
+S.getData 1 0 1 
+S.update 1 1 0 

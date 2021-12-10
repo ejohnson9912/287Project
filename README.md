@@ -25,9 +25,17 @@ The PS/2 Keyboard is connected to the FPGA via its onboard PS/2 port. The signal
 The Altera DE2-115 FPGA board has an onboard 16 character x 2-line liquid crystal display (LCD). The Hitachi HD44780 (in this instance) has specific controls for different functions and has 36 spaces for 5x8 dot characters. The LCD driver module accepts a 256 bit character string and writes it to the LCD.
 
 ## Video Demo
-//TODO: [Link to video demo](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+// TODO: [Link to video demo](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+## Controls
+// TODO: List keyboard commands
+## Gameplay Example
+Each player selects their character. Players select be the same character, however it is not recommended as it could create confusion between who is who.
+
+## Potential Improvements
+This game is far from perfect. The hardware limits of the Altera DE2-115 FPGA board and verilog in general makes it difficult to implement a fully-functional game with complex graphics even close to the java version. However, this doesn't mean that there aren't other ways to improve the game. A small list of things 
 
 ## Credits
 
-LCD Controller - Isaac Budde // TODO: Add link to Isaac's GitHub
+LCD Controller - Isaac Budde // TODO: Add link to Isaac's GitHub <br>
 VGA Controller - [Sibo](https://github.com/dongsibo/cscb58-project)

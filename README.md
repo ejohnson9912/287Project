@@ -29,6 +29,7 @@ The Altera DE2-115 FPGA board has an onboard 16 character x 2-line liquid crysta
 
 ## Controls
 // TODO: List keyboard commands
+// TODO
 ## Gameplay Example
 Each player selects their character. Players select be the same character, however it is not recommended as it could create confusion between who is who.
 

@@ -25,18 +25,35 @@ The PS/2 Keyboard is connected to the FPGA via its onboard PS/2 port. The signal
 The Altera DE2-115 FPGA board has an onboard 16 character x 2-line liquid crystal display (LCD). The Hitachi HD44780 (in this instance) has specific controls for different functions and has 36 spaces for 5x8 dot characters. The LCD driver module accepts a 256 bit character string and writes it to the LCD.
 
 ## Video Demo
-// TODO: [Link to video demo](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[Link to video demo](https://drive.google.com/file/d/1u6wMc7TNT77IoMfv3riSLn2CzDAt_WLu/view?usp=sharing)
 
 ## Controls
-// TODO: List keyboard commands
-// TODO
+
+| Key | Description |
+| ----------- | ----------- |
+| Enter | Advance Screen/State |
+| Backspace | Reset Game |
+| W/S | Cycle through characters, attacks, aim, and y-axis movement |
+| A/D | Used to select x movement | 
+| P | Show speed of character (character selection) or spread of attack |
+| H | Show health of character |
+| I | Show distance between p1 and p2 |
+| L | Show ammo left in an attack |
+| O | Show the dodge value of a player |
+| R | Show the range of an attack (attack selection) |
+| 1 | Show Player 1 Position |
+| 2 | Show Player 2 Position |
+
 ## Gameplay Example
 Each player selects their character. Players select be the same character, however it is not recommended as it could create confusion between who is who.
 
 ## Potential Improvements
-This game is far from perfect. The hardware limits of the Altera DE2-115 FPGA board and verilog in general makes it difficult to implement a fully-functional game with complex graphics even close to the java version. However, this doesn't mean that there aren't other ways to improve the game. A small list of things 
+This game is far from perfect. The hardware limits of the Altera DE2-115 FPGA board and verilog in general makes it difficult to implement a fully-functional game with complex graphics even close to the java version. However, this doesn't mean that there aren't other ways to improve the game. A small list of things:
+- Add more characters
+- Add more attacks
+- Improve graphics (centered grid, character models, etc.)
 
 ## Credits
 
-LCD Controller - Isaac Budde // TODO: Add link to Isaac's GitHub <br>
+LCD Controller - [Isaac Budde](https://github.com/buddeiw) <br>
 VGA Controller - [Sibo](https://github.com/dongsibo/cscb58-project)
